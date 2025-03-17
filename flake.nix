@@ -34,7 +34,7 @@
   outputs = inputs: let
     modules = with inputs; [
       manager.nixosModules.default
-      stylix.nixosModules.default
+      stylix.nixosModules.stylix
     ] ++ [./conf];
 
     modules-home = with inputs; [
@@ -50,14 +50,14 @@
       inherit global;
       inherit modules-home;
 
-      utils = import ./util;
+      utils = import ./util inputs.nixpkgs.lib;
     };
   in {
     nixosConfigurations = {
       macbook = inputs.nixpkgs.lib.nixosSystem {
-        modules = modules ++ with inputs; [
+        modules = modules ++ (with inputs; [
           silicon.nixosModules.default
-        ] ++ [./host/macbook];
+        ]) ++ [./host/macbook];
 
         inherit specialArgs;
         system = "aarch64-linux";

@@ -1,7 +1,11 @@
-{
-  importDirs = dir: builtins.attrValues (
-    builtins.mapAttrs (n: _: "${dir}/${n}") (
-      builtins.filterAttrs (n: t: t == "directory") (
-       builtins.readDir dir
-  )));
+lib: {
+  importDirs = path: lib.lists.filter (x: x != null) (
+    lib.attrsets.mapAttrsToList 
+      (name: type: 
+        if type == "directory" 
+        then path + "/${name}" 
+        else null
+      ) 
+      (builtins.readDir path)
+  );
 }
