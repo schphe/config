@@ -42,7 +42,7 @@
   };
 
   networking = {
-    hostname = "macbook";
+    hostName = "macbook";
 
     wireless.iwd = {
       enable = true;

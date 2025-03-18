@@ -1,5 +1,5 @@
-{inputs, globals, modules-home, utils, ...}: {
-  imports = (utils.importDirs ./.);
+{inputs, globals, modules-home, util, ...}: {
+  imports = (util.importDirs ./.);
 
   nix.settings = {
     experimental-features = [

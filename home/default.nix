@@ -1,5 +1,5 @@
-{globals, utils, ...}: {
-  imports = (utils.importDirs ./.);
+{globals, util, ...}: {
+  imports = (util.importDirs ./.);
 
   home = {
     inherit globals.username;

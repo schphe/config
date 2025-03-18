@@ -41,16 +41,16 @@
       anyrun.homeManagerModules.default
     ] ++ [./home];
 
-    global = {
+    globals = {
       username = "schphe";
     };
 
     specialArgs = {
       inherit inputs;
-      inherit global;
+      inherit globals;
       inherit modules-home;
 
-      utils = import ./util inputs.nixpkgs.lib;
+      util = import ./util inputs.nixpkgs.lib;
     };
   in {
     nixosConfigurations = {

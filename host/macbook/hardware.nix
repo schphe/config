@@ -15,7 +15,7 @@
     kernelModules = [];
   };
 
-  boot.luks.devices = {
+  boot.initrd.luks.devices = {
     "encrypted" = {
       allowDiscards = true;
       device = "/dev/disk/by-uuid/6679451e-5c2e-4c52-b7d9-20990fac00ea";
@@ -66,6 +66,10 @@
   swapDevices = [{
     device = "/dev/disk/by-uuid/59c25a7b-da33-449c-b332-0618ade63354";
   }];
+
+  hardware = {
+    enableRedistributableFirmware = lib.mkDefault true;
+  };
 
   networking.useDHCP = lib.mkDefault true;
   nixpkgs.hostPlatform = lib.mkDefault "aarch64-linux";
