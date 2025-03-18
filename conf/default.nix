@@ -37,12 +37,15 @@
       inherit globals;
     };
 
-    sharedModules = [{
+    # sharedModules = modules-home;
+    
+    users.${globals.username} = {
       imports = modules-home;
-    }];
+    };
   };
 
   users.users.${globals.username} = {
+    initialPassword = "12345";
     isNormalUser = true;
 
     extraGroups = [

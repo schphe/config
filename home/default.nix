@@ -2,7 +2,7 @@
   imports = (util.importDirs ./.);
 
   home = {
-    inherit globals.username;
+    username = globals.username;
     homeDirectory = "/home/${globals.username}";
   };
 
