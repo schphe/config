@@ -8,7 +8,7 @@
         translate
         rink
       ] ++ [
-        # inputs.anyrun-cliphist.packages.${pkgs.system}.cliphist
+        inputs.anyrun-cliphist.packages.${pkgs.system}.cliphist
       ];
 
       hideIcons = true;
