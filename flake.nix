@@ -16,6 +16,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    persist = {
+      url = "github:nix-community/impermanence";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     stylix = {
       url = "github:danth/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -39,10 +44,12 @@
   outputs = inputs: let
     modules = with inputs; [
       manager.nixosModules.default
+      persist.nixosModules.default
       stylix.nixosModules.stylix
     ] ++ [./conf];
 
     modules-home = with inputs; [
+      persist.homeManagerModules.default
       anyrun.homeManagerModules.default
       xremap.homeManagerModules.default
     ] ++ [./home];
