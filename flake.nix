@@ -35,6 +35,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nixcord = {
+      url = "github:kaylorben/nixcord";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     xremap = {
       url = "github:xremap/nix-flake";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -50,6 +55,7 @@
 
     modules-home = with inputs; [
       persist.homeManagerModules.default
+      nixcord.homeManagerModules.default
       anyrun.homeManagerModules.default
       xremap.homeManagerModules.default
     ] ++ [./home];
