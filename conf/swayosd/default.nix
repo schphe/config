@@ -11,7 +11,7 @@
       description = "swayosd libinput backend";
       
       documentation = [
-        "https://github.com/ErikReider/SwayOSD"
+        "https://github.com/erikreider/swayosd"
       ];
       
       wantedBy = ["graphical.target"];

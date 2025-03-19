@@ -1,4 +1,4 @@
-{pkgs, ...}: let
+{globals, pkgs, ...}: let
   cursor = {
     size = 24;
   
@@ -12,8 +12,8 @@
   };
 
   icon = {
-    dark = "Colloid-Gruvbox-Dark";
-    
+    name = "Colloid-Gruvbox-Dark";
+
     package = pkgs.colloid-icon-theme.override {
       schemeVariants = ["gruvbox"];
     };
@@ -44,7 +44,12 @@ in {
     base16Scheme = "${pkgs.base16-schemes}/share/themes/${theme}.yaml";
   };
 
-  home-manager.sharedModules = [{
-    stylix.iconTheme = icon;
-  }];
+  home-manager.users.${globals.username} = {
+    stylix.iconTheme = {
+      enable = true;
+
+      dark = icon.name;
+      package = icon.package;
+    };
+  };
 }
