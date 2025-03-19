@@ -33,6 +33,7 @@
     backupFileExtension = "backup";
 
     extraSpecialArgs = {
+      inherit util;
       inherit inputs;
       inherit globals;
     };

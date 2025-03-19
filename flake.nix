@@ -29,6 +29,11 @@
       url = "github:wuliuqii/anyrun-plugins";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    xremap = {
+      url = "github:xremap/nix-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = inputs: let
@@ -39,6 +44,7 @@
 
     modules-home = with inputs; [
       anyrun.homeManagerModules.default
+      xremap.homeManagerModules.default
     ] ++ [./home];
 
     globals = {

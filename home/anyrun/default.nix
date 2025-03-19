@@ -8,7 +8,7 @@
         translate
         rink
       ] ++ [
-        inputs.anyrun-cliphist.packages.${pkgs.system}.cliphist
+        # inputs.anyrun-cliphist.packages.${pkgs.system}.cliphist
       ];
 
       hideIcons = true;
@@ -21,4 +21,27 @@
       }
     '';
   };
+
+  services.xremap.config.keymap = [
+    {
+      name = "open anyrun";
+
+      remap = {
+        super-space = {
+          launch = ["anyrun"];
+        };
+      };
+    }
+    # {
+    #   name = "close anyrun";
+
+    #   remap = {
+    #     super-space = {
+    #       launch = ["pkill anyrun"];
+    #     };
+    #   };
+
+    #   application.only = ["anyrun"];
+    # }
+  ];
 }

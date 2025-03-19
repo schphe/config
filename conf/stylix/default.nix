@@ -12,16 +12,16 @@
   };
 
   icon = {
-    name = "Colloid-teal-nord-dark";
+    dark = "Colloid-Gruvbox-Dark";
+    
     package = pkgs.colloid-icon-theme.override {
-      colorVariants = ["teal"];
-      schemeVariants = ["nord"];
+      schemeVariants = ["gruvbox"];
     };
   };
 
   polarity = "dark";
 
-  theme = "ayu-dark";
+  theme = "gruvbox-dark-hard";
 
   wallpaper = ./wallpaper.png;
 in {
