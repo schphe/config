@@ -1,0 +1,10 @@
+window#osd {
+  background: @theme_bg_color;
+
+  border: 6px solid @accent_color;
+  border-radius: 0px;
+}
+
+window#osd progressbar {
+  border-radius: 0px;
+}

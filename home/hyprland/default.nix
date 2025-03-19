@@ -11,6 +11,10 @@
     portalPackage = null;
 
     settings = {
+      exec-once = [
+        "waybar"
+      ];
+    
       general = {
         border_size = 6;
 
@@ -34,6 +38,9 @@
       misc = {
         enable_swallow = true;
         swallow_regex = "^(kitty)$";
+
+        disable_hyprland_logo = true;
+        disable_splash_rendering = true;
       };
     };
   };
