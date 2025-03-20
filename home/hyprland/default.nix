@@ -46,8 +46,14 @@
       monitor = ",preferred,auto,1.6";
 
       xwayland = {
-        force_zero_scaling = false;
+        force_zero_scaling = true;
       };
+    };
+
+    systemd = {
+      variables = [
+        "--all"
+      ];
     };
   };
 
