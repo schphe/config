@@ -12,6 +12,7 @@
 
         packages = with pkgs.inputs.firefox-addons; [
           darkreader
+          proton-pass
           sponsorblock
           ublock-origin
         ];
