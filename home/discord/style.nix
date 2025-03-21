@@ -11,8 +11,7 @@
 
     .recentsIcon_ea0547,
     .recentsIcon_c99c29,
-    .iconWrapper__9293f,
-    .anchor_edefb8 {
+    .iconWrapper__9293f {
       display: none;
     }
 
