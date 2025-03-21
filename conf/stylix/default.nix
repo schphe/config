@@ -1,4 +1,4 @@
-{globals, pkgs, packages, ...}: let
+{globals, packages, pkgs, ...}: let
   cursor = {
     size = 24;
   
@@ -7,13 +7,15 @@
   };
 
   font = {
-    name = "Monocraft";
-    package = pkgs.monocraft;
-  };
+    emoji = {
+      name = "SerenityOS Emoji Regular";
+      package = packages.serenity-emoji;
+    };
 
-  emoji = {
-    name = "SerenityOS Emoji Regular";
-    package = packages.serenity-emoji;
+    text = {
+      name = "Monocraft";
+      package = pkgs.monocraft;
+    };
   };
 
   icon = {
@@ -32,27 +34,33 @@
     };
   };
 
-  polarity = "dark";
+  scheme = {
+    base01 = "1d2021";
+  };
 
   theme = "gruvbox-dark-hard";
 
-  wallpaper = ./wallpaper.png;
+################################################################
+
 in {
   stylix = {
     enable = true;
 
     inherit cursor;
-    inherit polarity;
-
-    image = wallpaper;
 
     fonts = {
-      inherit emoji;
+      inherit (font) emoji;
 
-      serif = font;
-      sansSerif = font;
-      monospace = font;
+      serif = font.text;
+      sansSerif = font.text;
+      monospace = font.text;
     };
+
+    override = scheme;
+
+    polarity = "dark";
+
+    image = ./wallpaper.png;
 
     base16Scheme = "${pkgs.base16-schemes}/share/themes/${theme}.yaml";
   };

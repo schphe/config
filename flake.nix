@@ -50,7 +50,7 @@
     };
   };
 
-  outputs = {self, nixpkgs, ...}@inputs: let
+  outputs = inputs: let
     utilities = import ./util inputs;
 
     globals = {
@@ -75,7 +75,6 @@
       anyrun.homeManagerModules.default
       xremap.homeManagerModules.default
     ];
-
   in {
     nixosConfigurations = {
       macbook = utilities.newHost ./host/macbook
