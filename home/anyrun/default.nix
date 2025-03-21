@@ -32,16 +32,5 @@
         };
       };
     }
-    # {
-    #   name = "close anyrun";
-
-    #   remap = {
-    #     super-space = {
-    #       launch = ["pkill anyrun"];
-    #     };
-    #   };
-
-    #   application.only = ["anyrun"];
-    # }
   ];
 }
