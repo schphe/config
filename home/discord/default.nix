@@ -1,4 +1,8 @@
 {...}: {
+  imports = [
+    ./style.nix
+  ];
+
   programs.nixcord = {
     enable = true;
 
@@ -32,6 +36,8 @@
           enable = true;
         };
       };
+
+      useQuickCss = true;
     };
   };
 }
