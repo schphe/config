@@ -3,6 +3,8 @@
     "$mod" = "SUPER";
   
     bind = [
+      "$mod, P, exec, hyprpicker -al"
+
       "$mod,            Q, killactive,"
       "$mod+CTRL+SHIFT, Q, exit,"
 

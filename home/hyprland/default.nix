@@ -1,7 +1,11 @@
-{...}: {
+{pkgs, ...}: {
   imports = [
     ./input.nix
     ./layout.nix
+  ];
+
+  home.packages = [
+    pkgs.hyprpicker
   ];
 
   wayland.windowManager.hyprland = {
