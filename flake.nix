@@ -60,6 +60,12 @@
       inherit utilities;
     };
 
+    host = with inputs; [
+      manager.nixosModules.default
+      persist.nixosModules.default
+      stylix.nixosModules.stylix
+    ];
+
     home = with inputs; [
       persist.homeManagerModules.default
       nixcord.homeManagerModules.default
@@ -67,15 +73,10 @@
       xremap.homeManagerModules.default
     ];
 
-    mod = with inputs; [
-      manager.nixosModules.default
-      persist.nixosModules.default
-      stylix.nixosModules.stylix
-    ];
   in {
     nixosConfigurations = {
       macbook = utilities.newHost ./host/macbook
-      "aarch64-linux" args mod home
+      "aarch64-linux" args host home
       (with inputs; [
         silicon.nixosModules.default
       ]);
