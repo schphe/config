@@ -15,4 +15,14 @@
       };
     }
   ];
+
+  xdg.mimeApps.defaultApplications = let
+    thunar = [
+      "thunar.desktop"
+    ];
+  in {
+    "inode/directory" = thunar;
+    "application/x-gnome-saved-search" = thunar;
+  };
+
 }
