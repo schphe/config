@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{globals, pkgs, ...}: {
   programs = {
     nushell = {
       enable = true;

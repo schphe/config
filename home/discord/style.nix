@@ -3,10 +3,13 @@
 {
   programs.nixcord.quickCss = ''
     :root {
-      ${builtins.concatStringsSep "\n      " (builtins.genList (i:
-        let num = 100 + (i * 30) + (if i > 8 then 15 else 0);
-        in "--brand-${toString num}: ${base0D};"
-      ) 25)}
+      ${builtins.concatStringsSep "\n  " (builtins.concatLists
+        (builtins.genList (i:
+          (builtins.genList (j:
+            "--brand-${toString ((100 * i) + 100 + (j * 30))}: ${base0D};"
+          ) 3)
+        ) 9)
+      )}
     }
 
     .recentsIcon_ea0547,
