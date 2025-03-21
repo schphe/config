@@ -44,6 +44,11 @@
 
         browser = {
           tabs.inTitlebar = 0;
+
+          download = {
+            dir = "/home/${globals.username}/download";
+            folderList = 2;
+          };
         };
       };
 
