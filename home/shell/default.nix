@@ -41,4 +41,10 @@
       };
     };
   };
+
+  home.persistence."/pers/home/${globals.username}" = {
+    files = [
+      ".config/nushell/history.txt"
+    ];
+  };
 }

@@ -1,4 +1,4 @@
-{...}: {
+{globals, ...}: {
   imports = [
     ./style.nix
   ];
@@ -39,5 +39,11 @@
 
       useQuickCss = true;
     };
+  };
+
+  home.persistence."/pers/home/${globals.username}" = {
+    directories = [
+      ".config/vesktop"
+    ];
   };
 }

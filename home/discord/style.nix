@@ -10,8 +10,7 @@
     }
 
     .recentsIcon_ea0547,
-    .recentsIcon_c99c29,
-    .iconWrapper__9293f {
+    .recentsIcon_c99c29 {
       display: none;
     }
 
