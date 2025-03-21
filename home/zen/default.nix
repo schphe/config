@@ -1,4 +1,4 @@
-{config, pkgs, utilities, ...}:
+{config, globals, pkgs, utilities, ...}:
   with config.lib.stylix.colors.withHashtag;
 {
   programs.firefox = {
@@ -18,6 +18,10 @@
       };
 
       settings = utilities.flattenAttrs [] {
+        extensions = {
+          autoDisableScopes = 0;
+        };
+
         zen = {
           theme = {
             accent-color = base0D;
@@ -40,53 +44,6 @@
 
         browser = {
           tabs.inTitlebar = 0;
-
-          uiCustomization.state = builtins.toJSON {
-            currentVersion = 21;
-            dirtyAreaCache = [
-              "nav-bar"
-              "PersonalToolbar"
-              "TabsToolbar"
-              "toolbar-menubar"
-              "unified-extensions-area"
-              "vertical-tabs"
-              "zen-sidebar-bottom-buttons"
-            ];
-            newElementCount = 2;
-            placements = {
-              "nav-bar" = [
-                "back-button"
-                "customizableui-special-spring1"
-                "customizableui-special-spring2"
-                "forward-button"
-                "stop-reload-button"
-                "unified-extensions-button"
-                "urlbar-container"
-                "vertical-spacer"
-              ];
-              "PersonalToolbar" = [
-                "import-button"
-                "personal-bookmarks"
-              ];
-              "TabsToolbar" = [
-                "tabbrowser-tabs"
-              ];
-              "toolbar-menubar" = [
-                "menubar-items"
-              ];
-              "vertical-tabs" = [];
-              "widget-overflow-fixed-list" = [];
-              "zen-sidebar-bottom-buttons" = [
-                "downloads-button"
-                "preferences-button"
-                "zen-workspaces-button"
-              ];
-              "zen-sidebar-top-buttons" = [];
-            };
-            seen = [
-              "developer-button"
-            ];
-          };
         };
       };
 
@@ -99,4 +56,28 @@
 
     package = pkgs.inputs.zen.default;
   };
+
+  stylix.targets.firefox = {
+    profileNames = [
+      "main"
+    ];
+  };
+
+  xdg.mimeApps.defaultApplications = let
+    zen = [
+      "zen.desktop"
+    ];
+  in {
+    "text/xml" = zen;
+    "text/html" = zen;
+    "x-scheme-handler/http" = zen;
+    "x-scheme-handler/https" = zen;
+  };
+
+  home.persistence."/pers/home/${globals.username}" = {
+    directories = [
+      ".zen"
+    ];
+  };
+
 }
