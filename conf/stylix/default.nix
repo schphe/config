@@ -1,4 +1,4 @@
-{globals, pkgs, ...}: let
+{globals, pkgs, packages, ...}: let
   cursor = {
     size = 24;
   
@@ -11,10 +11,23 @@
     package = pkgs.monocraft;
   };
 
+  emoji = {
+    name = "SerenityOS Emoji Regular";
+    package = packages.serenity-emoji;
+  };
+
   icon = {
     name = "Colloid-Gruvbox-Dark";
 
-    package = pkgs.colloid-icon-theme.override {
+    package = (pkgs.colloid-icon-theme.overrideAttrs (old: {
+      preInstall = old.preInstall or "" + ''
+        echo "[categories@2x/22]" >> ./src/index.theme
+        echo "Size=22" >> ./src/index.theme
+        echo "Scale=2" >> ./src/index.theme
+        echo "Context=Categories" >> ./src/index.theme
+        echo "Type=Fixed" >> ./src/index.theme
+      '';
+    })).override {
       schemeVariants = ["gruvbox"];
     };
   };
@@ -34,7 +47,7 @@ in {
     image = wallpaper;
 
     fonts = {
-      # emoji = font;
+      inherit emoji;
 
       serif = font;
       sansSerif = font;
