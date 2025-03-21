@@ -1,5 +1,5 @@
-{inputs, globals, modules-home, util, ...}: {
-  imports = (util.importDirs ./.);
+{globals, utilities, ...}: {
+  imports = (utilities.importDirs ./.);
 
   nix.settings = {
     experimental-features = [
@@ -27,22 +27,6 @@
 
   nixpkgs.config = {
     allowUnfree = true;
-  };
-
-  home-manager = {
-    backupFileExtension = "backup";
-
-    extraSpecialArgs = {
-      inherit util;
-      inherit inputs;
-      inherit globals;
-    };
-
-    # sharedModules = modules-home;
-    
-    users.${globals.username} = {
-      imports = modules-home;
-    };
   };
 
   users.users.${globals.username} = {

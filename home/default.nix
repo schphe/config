@@ -1,5 +1,5 @@
-{globals, util, ...}: {
-  imports = (util.importDirs ./.);
+{globals, utilities, ...}: {
+  imports = (utilities.importDirs ./.);
 
   home = {
     username = globals.username;

@@ -13,23 +13,23 @@ in {
 
       remap = {
         brightnessdown = {
-          launch = [cli "--brightness -5"];
+          launch = [cli "--brightness=lower"];
         };
 
         brightnessup = {
-          launch = [cli "--brightness +5"];
+          launch = [cli "--brightness=raise"];
         };
 
         mute = {
-          launch = [cli "--output-volume mute-toggle"];
+          launch = [cli "--output-volume=mute-toggle"];
         };
 
         volumedown = {
-          launch = [cli "--output-volume lower"];
+          launch = [cli "--output-volume=lower"];
         };
 
         volumeup = {
-          launch = [cli "--output-volume raise"];
+          launch = [cli "--output-volume=raise"];
         };
       };
     }
