@@ -43,14 +43,6 @@
 
   networking = {
     hostName = "macbook";
-
-    wireless.iwd = {
-      enable = true;
-
-      settings = {
-        General.EnableNetworkConfiguration = true;
-      };
-    };
   };
 
   time.timeZone = "America/Chicago";
