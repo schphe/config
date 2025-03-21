@@ -18,7 +18,6 @@
 
     persist = {
       url = "github:nix-community/impermanence";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     stylix = {
@@ -44,43 +43,44 @@
       url = "github:xremap/nix-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    zen = {
+      url = "github:youwen5/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = inputs: let
-    modules = with inputs; [
-      manager.nixosModules.default
-      persist.nixosModules.default
-      stylix.nixosModules.stylix
-    ] ++ [./conf];
+  outputs = {self, nixpkgs, ...}@inputs: let
+    utilities = import ./util inputs;
+    globals = import ./option.nix;
 
-    modules-home = with inputs; [
+    args = {
+      inherit inputs;
+      inherit globals;
+      inherit utilities;
+    };
+
+    home = with inputs; [
       persist.homeManagerModules.default
       nixcord.homeManagerModules.default
       anyrun.homeManagerModules.default
       xremap.homeManagerModules.default
-    ] ++ [./home];
+    ];
 
-    globals = {
-      username = "schphe";
-    };
-
-    specialArgs = {
-      inherit inputs;
-      inherit globals;
-      inherit modules-home;
-
-      util = import ./util inputs.nixpkgs.lib;
-    };
+    mod = with inputs; [
+      manager.nixosModules.default
+      persist.nixosModules.default
+      stylix.nixosModules.stylix
+    ];
   in {
     nixosConfigurations = {
-      macbook = inputs.nixpkgs.lib.nixosSystem {
-        modules = modules ++ (with inputs; [
-          silicon.nixosModules.default
-        ]) ++ [./host/macbook];
-
-        inherit specialArgs;
-        system = "aarch64-linux";
-      };
+      macbook = utilities.newHost ./host/macbook
+      "aarch64-linux" args mod home
+      (with inputs; [
+        silicon.nixosModules.default
+      ]);
     };
+
+    inherit (utilities) packages;
   };
 }

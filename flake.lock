@@ -1019,7 +1019,8 @@
         "persist": "persist",
         "silicon": "silicon",
         "stylix": "stylix",
-        "xremap": "xremap"
+        "xremap": "xremap",
+        "zen": "zen"
       }
     },
     "rust-overlay": {
@@ -1385,6 +1386,26 @@
         "owner": "k0kubun",
         "ref": "v0.10.7",
         "repo": "xremap",
+        "type": "github"
+      }
+    },
+    "zen": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1742443569,
+        "narHash": "sha256-yv0paFV6VaEVFYm3NCDKSHL7rb355ehrKImX54+rjIM=",
+        "owner": "youwen5",
+        "repo": "zen-browser-flake",
+        "rev": "b3b56d916b41eaf2ece23094ce16f221afe9e331",
+        "type": "github"
+      },
+      "original": {
+        "owner": "youwen5",
+        "repo": "zen-browser-flake",
         "type": "github"
       }
     }
