@@ -52,7 +52,10 @@
 
   outputs = {self, nixpkgs, ...}@inputs: let
     utilities = import ./util inputs;
-    globals = import ./option.nix;
+
+    globals = {
+      username = "schphe";
+    };
 
     args = {
       inherit inputs;
