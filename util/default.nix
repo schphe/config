@@ -34,7 +34,11 @@ in rec {
         extraSpecialArgs = specialArgs;
 
         users.${args.globals.username} = {
-          imports = home ++ [../home];
+          imports = home ++ [../home] ++ [({...}: {
+            nixpkgs = {
+              overlays = builtins.attrValues self.overlays;
+            };
+          })];
         };
       };
     })];
@@ -42,6 +46,8 @@ in rec {
     inherit specialArgs;
     inherit system;
   };
+
+  overlays = import ../olay inputs;
 
   packages = forEachSystem (system:
     import ../pack {
