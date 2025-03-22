@@ -1,15 +1,13 @@
 {globals, ...}: {
-  services.xremap.config.keymap = [
-    {
-      name = "open thunar";
+  services.xremap.config.keymap = [{
+    name = "open thunar";
 
-      remap = {
-        super-shift-enter = {
-          launch = ["thunar"];
-        };
+    remap = {
+      super-shift-enter = {
+        launch = ["thunar"];
       };
-    }
-  ];
+    };
+  }];
 
   xdg.mimeApps = {
     enable = true;

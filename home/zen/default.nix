@@ -73,17 +73,15 @@
     ];
   };
 
-  services.xremap.config.keymap = [
-    {
-      name = "open zen browser";
+  services.xremap.config.keymap = [{
+    name = "open zen browser";
 
-      remap = {
-        super-w = {
-          launch = ["zen"];
-        };
+    remap = {
+      super-w = {
+        launch = ["zen"];
       };
-    }
-  ];
+    };
+  }];
 
   xdg.mimeApps = {
     enable = true;

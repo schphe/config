@@ -5,7 +5,8 @@
     enable = true;
 
     config = {
-      background = base00;
+      background = "color";
+      background-color = base00;
     };
   };
 }

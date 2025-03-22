@@ -1,0 +1,5 @@
+{...}: {
+  services.logind = {
+    powerKey = "lock";
+  };
+}

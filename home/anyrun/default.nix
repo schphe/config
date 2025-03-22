@@ -22,15 +22,13 @@
     '';
   };
 
-  services.xremap.config.keymap = [
-    {
-      name = "open anyrun";
+  services.xremap.config.keymap = [{
+    name = "open anyrun";
 
-      remap = {
-        super-space = {
-          launch = ["anyrun"];
-        };
+    remap = {
+      super-space = {
+        launch = ["anyrun"];
       };
-    }
-  ];
+    };
+  }];
 }

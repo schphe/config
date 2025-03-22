@@ -7,15 +7,13 @@
     };
   };
 
-  services.xremap.config.keymap = [
-    {
-      name = "open kitty";
+  services.xremap.config.keymap = [{
+    name = "open kitty";
 
-      remap = {
-        super-enter = {
-          launch = ["kitty"];
-        };
+    remap = {
+      super-enter = {
+        launch = ["kitty"];
       };
-    }
-  ];
+    };
+  }];
 }
