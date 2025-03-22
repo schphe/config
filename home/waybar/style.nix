@@ -10,7 +10,7 @@
 
       tooltip {
         background: ${base00};
-        border-color: ${base0D};
+        border-color: ${base0E};
       }
 
       #workspaces button {
