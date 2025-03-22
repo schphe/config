@@ -60,6 +60,7 @@
 
     globals = {
       username = "schphe";
+      terminal = "kitty";
     };
 
     args = {

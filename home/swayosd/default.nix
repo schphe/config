@@ -1,6 +1,4 @@
-{config, pkgs, ...}: let
-  cli = "swayosd-client";
-in {
+{config, pkgs, ...}: {
   services.swayosd = {
     enable = true;
 
@@ -10,7 +8,9 @@ in {
   services.xremap.config.keymap = [{
     name = "swayosd triggers";
 
-    remap = {
+    remap = let
+      cli = "swayosd-client";
+    in {
       brightnessdown = {
         launch = [cli "--brightness=lower"];
       };

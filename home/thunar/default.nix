@@ -1,9 +1,4 @@
-{...}: {
-  home.file.".config/xfce4/helpers.rc".text = ''
-    TerminalEmulator=kitty
-    TerminalEmulatorDismissed=true
-  '';
-
+{globals, ...}: {
   services.xremap.config.keymap = [
     {
       name = "open thunar";
@@ -16,13 +11,27 @@
     }
   ];
 
-  xdg.mimeApps.defaultApplications = let
-    thunar = [
-      "thunar.desktop"
-    ];
-  in {
-    "inode/directory" = thunar;
-    "application/x-gnome-saved-search" = thunar;
+  xdg.mimeApps = {
+    enable = true;
+
+    defaultApplications = let
+      thunar = [
+        "thunar.desktop"
+      ];
+    in {
+      "inode/directory" = thunar;
+      "inode/mount-point" = thunar;
+    };
   };
 
+  home.file.".config/xfce4/helpers.rc".text = ''
+    TerminalEmulator=${globals.terminal}
+    TerminalEmulatorDismissed=true
+  '';
+
+  home.persistence."/pers/home/${globals.username}" = {
+    directories = [
+      ".config/xfce4/xfconf"
+    ];
+  };
 }

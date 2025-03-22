@@ -73,15 +73,31 @@
     ];
   };
 
-  xdg.mimeApps.defaultApplications = let
-    zen = [
-      "zen.desktop"
-    ];
-  in {
-    "text/xml" = zen;
-    "text/html" = zen;
-    "x-scheme-handler/http" = zen;
-    "x-scheme-handler/https" = zen;
+  services.xremap.config.keymap = [
+    {
+      name = "open zen browser";
+
+      remap = {
+        super-w = {
+          launch = ["zen"];
+        };
+      };
+    }
+  ];
+
+  xdg.mimeApps = {
+    enable = true;
+
+    defaultApplications = let
+      zen = [
+        "zen.desktop"
+      ];
+    in {
+      "text/xml" = zen;
+      "text/html" = zen;
+      "x-scheme-handler/http" = zen;
+      "x-scheme-handler/https" = zen;
+    };
   };
 
   home.persistence."/pers/home/${globals.username}" = {

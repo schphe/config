@@ -22,7 +22,7 @@
 
       modules-right = [
         "network"
-        "wireplumber"
+        "pulseaudio"
         "battery"
       ];
 
@@ -47,7 +47,7 @@
         tooltip-format = "{essid}\n{gwaddr}";
       };
 
-      wireplumber = {};
+      pulseaudio = {};
 
       battery = {
         format-time = "{H}h{M}m";
