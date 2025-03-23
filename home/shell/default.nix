@@ -2,6 +2,9 @@
   home.packages = with pkgs; [
     devenv
     tilt
+
+    ffmpeg
+    p7zip
   ];
 
   programs = {
