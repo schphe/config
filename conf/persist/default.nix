@@ -4,10 +4,9 @@
 
     directories = [
       "/var/lib/bluetooth"
-      "/var/lib/iwd"
       "/var/lib/nixos"
     ];
 
-    files = []; 
+    files = [];
   };
 }

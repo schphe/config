@@ -30,4 +30,10 @@
       "networkmanager"
     ];
   };
+
+  environment.persistence."/pers" = {
+    directories = [
+      "/var/lib/iwd"
+    ];
+  };
 }
