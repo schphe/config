@@ -1,5 +1,8 @@
 {globals, pkgs, ...}: {
-  home.packages = with pkgs; [];
+  home.packages = with pkgs; [
+    devenv
+    tilt
+  ];
 
   programs = {
     nushell = {
@@ -30,6 +33,11 @@
     };
 
     carapace = {
+      enable = true;
+      enableNushellIntegration = true;
+    };
+
+    direnv = {
       enable = true;
       enableNushellIntegration = true;
     };
