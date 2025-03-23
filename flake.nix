@@ -34,6 +34,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    doom = {
+      url = "github:marienz/nix-doom-emacs-unstraightened";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     firefox-addons = {
       url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -80,6 +85,7 @@
       nixcord.homeManagerModules.default
       anyrun.homeManagerModules.default
       xremap.homeManagerModules.default
+      doom.homeModule
     ];
   in {
     nixosConfigurations = {

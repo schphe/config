@@ -1,4 +1,4 @@
-{config, ...}:
+{config, lib, ...}:
   with config.lib.stylix.colors.withHashtag;
 {
   programs.mpv = {
@@ -6,7 +6,7 @@
 
     config = {
       background = "color";
-      background-color = base00;
+      background-color = lib.mkDefault base00;
     };
   };
 }
