@@ -1,4 +1,6 @@
 {globals, pkgs, ...}: {
+  home.packages = with pkgs; [];
+
   programs = {
     nushell = {
       enable = true;
@@ -23,7 +25,20 @@
       '';
     };
 
+    bat = {
+      enable = true;
+    };
+
     carapace = {
+      enable = true;
+      enableNushellIntegration = true;
+    };
+
+    fzf = {
+      enable = true;
+    };
+
+    zoxide = {
       enable = true;
       enableNushellIntegration = true;
     };
@@ -45,6 +60,7 @@
   home.persistence."/pers/home/${globals.username}" = {
     files = [
       ".config/nushell/history.txt"
+      ".local/share/db.zo"
     ];
   };
 }
