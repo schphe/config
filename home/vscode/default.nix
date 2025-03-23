@@ -3,15 +3,17 @@
     enable = true;
     package = pkgs.vscodium;
 
-    profiles.main = {
-      #extensions = with pkgs.vscode-extensions; [
-      #];
+    extensions = with pkgs.vscode-extensions; [
+      rust-lang.rust-analyzer
+    ];
+
+    profiles.default = {
     };
   };
 
   stylix.targets.vscode = {
     profileNames = [
-      "main"
+      "default"
     ];
   };
 }

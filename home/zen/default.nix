@@ -6,7 +6,7 @@
 
     configPath = ".zen";
 
-    profiles.main = {
+    profiles.default = {
       extensions = {
         force = true;
 
@@ -69,7 +69,7 @@
 
   stylix.targets.firefox = {
     profileNames = [
-      "main"
+      "default"
     ];
   };
 
