@@ -1,4 +1,4 @@
-{...}: {
+{assets, ...}: {
   imports = [
     ./hardware.nix
   ];
@@ -9,16 +9,22 @@
 
     kernelParams = [
       "quiet"
+      "splash"
       "loglevel=3"
+      "boot.shell_on_fail"
+      "rd.systemd.show_status=false"
       "rd.udev.log_level=3"
       "systemd.show_status=auto"
+      "udev.log_priority=3"
     ];
 
     loader = {
       efi.canTouchEfiVariables = false;
       systemd-boot.enable = true;
-      timeout = 1;
+      timeout = 0;
     };
+
+    m1n1CustomLogo = assets.boot;
   };
 
   hardware = {

@@ -25,6 +25,7 @@ in rec {
   ################ flake ################
   newHost = host: system: args: mod: home: extra: let
     specialArgs = args // {
+      assets = import ../aset;
       packages = self.packages.${system};
     };
   in lib.nixosSystem {

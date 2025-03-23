@@ -1307,17 +1307,17 @@
         "rust-overlay": "rust-overlay_2"
       },
       "locked": {
-        "lastModified": 1742163826,
-        "narHash": "sha256-W0jd5FoOuQUnpBrAc7H/EoXrq9FpcR88ZfcqMU5MXBw=",
-        "owner": "tpwrules",
+        "lastModified": 1742691405,
+        "narHash": "sha256-aBHU1ewRKAqrfuOxSBp/rrV9nMopb1+11NtF0IpIEL0=",
+        "owner": "schphe",
         "repo": "nixos-apple-silicon",
-        "rev": "19b1103d09b4be12bdbf4c713b0e45fc434b5f6a",
+        "rev": "8e00b509db6b59686447bea14a800407343c37fe",
         "type": "github"
       },
       "original": {
-        "owner": "tpwrules",
+        "owner": "schphe",
+        "ref": "no-serial",
         "repo": "nixos-apple-silicon",
-        "rev": "19b1103d09b4be12bdbf4c713b0e45fc434b5f6a",
         "type": "github"
       }
     },

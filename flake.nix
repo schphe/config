@@ -7,7 +7,7 @@
     };
 
     silicon = {
-      url = "github:tpwrules/nixos-apple-silicon/19b1103d09b4be12bdbf4c713b0e45fc434b5f6a";
+      url = "github:schphe/nixos-apple-silicon/no-serial";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 

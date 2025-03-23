@@ -1,4 +1,4 @@
-{globals, packages, pkgs, ...}: let
+{assets, globals, packages, pkgs, ...}: let
   cursor = {
     size = 24;
   
@@ -60,7 +60,7 @@ in {
 
     polarity = "dark";
 
-    image = ./wallpaper.png;
+    image = assets.desk;
 
     base16Scheme = "${pkgs.base16-schemes}/share/themes/${theme}.yaml";
   };

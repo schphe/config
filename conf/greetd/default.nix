@@ -2,14 +2,16 @@
   services.greetd = {
     enable = true;
     
-    settings = {
+    settings = let
+      command = "Hyprland > /dev/null";
+    in rec {
       default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --cmd Hyprland";
+        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --cmd '${command}'";
         user = globals.username;
       };
 
       initial_session = {
-        command = "Hyprland";
+        command = command;
         user = globals.username;
       };
     };
