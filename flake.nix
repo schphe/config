@@ -44,6 +44,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nvim = {
+      url = "github:notashelf/nvf";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     nixcord = {
       url = "github:kaylorben/nixcord";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -85,6 +90,7 @@
       nixcord.homeManagerModules.default
       anyrun.homeManagerModules.default
       xremap.homeManagerModules.default
+      nvim.homeManagerModules.default
       doom.homeModule
     ];
   in {
