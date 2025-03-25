@@ -6,6 +6,20 @@
 
     networkmanager = {
       enable = true;
+
+      wifi = {
+        backend = "iwd";
+      };
+    };
+
+    wireless.iwd = {
+      enable = true;
+
+      settings = {
+        Settings = {
+          AlwaysRandomizeAddress = true;
+        };
+      };
     };
   };
 
@@ -22,8 +36,8 @@
 
   environment.persistence."/pers" = {
     directories = [
-      "/etc/NetworkManager"
       "/var/lib/bluetooth"
+      "/var/lib/iwd"
     ];
   };
 }
