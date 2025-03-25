@@ -39,7 +39,6 @@
     password = config.sops.secrets.${globals.username};
   in {
     hashedPasswordFile = password.path;
-
     isNormalUser = true;
 
     extraGroups = [

@@ -4,7 +4,12 @@
   };
 
   users.groups = {
-    input.members = [globals.username];
-    uinput.members = [globals.username];
+    input.members = [
+      globals.username
+    ];
+
+    uinput.members = [
+      globals.username
+    ];
   };
 }

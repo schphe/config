@@ -3,12 +3,12 @@
     enable = true;
 
     config = {
-      plugins = with inputs.anyrun.packages.${pkgs.system}; [
+      plugins = with pkgs.inputs.anyrun; [
         applications
         translate
         rink
       ] ++ [
-        inputs.anyrun-cliphist.packages.${pkgs.system}.cliphist
+        pkgs.inputs.anyrun-cliphist.cliphist
       ];
 
       hideIcons = true;

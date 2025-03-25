@@ -22,7 +22,8 @@
 
   environment.persistence."/pers" = {
     directories = [
-      "/var/lib/iwd"
+      "/etc/NetworkManager"
+      "/var/lib/bluetooth"
     ];
   };
 }

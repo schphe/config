@@ -1,4 +1,4 @@
-{pkgs, lib, ...}: {
+{lib, pkgs, ...}: {
   imports = [
     ./input.nix
     ./layout.nix
