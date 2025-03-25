@@ -8,7 +8,7 @@
 
   font = {
     emoji = {
-      name = "SerenityOS Emoji Regular";
+      name = "SerenityOS Emoji";
       package = packages.serenity-emoji;
     };
 

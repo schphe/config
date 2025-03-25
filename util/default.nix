@@ -22,6 +22,14 @@ in rec {
       (builtins.readDir path)
   );
 
+  cssFontsGlobal = config: let
+    fonts = config.stylix.fonts;
+  in ''
+    * {
+      font-family: "${fonts.emoji.name}", "${fonts.serif.name}";
+    }
+  '';
+
   ################ flake ################
   newHost = host: system: args: mod: home: extra: let
     specialArgs = args // {

@@ -1,4 +1,4 @@
-{config, ...}:
+{config, utilities, ...}:
   with config.lib.stylix.colors.withHashtag;
 {
   programs.nixcord.quickCss = ''
@@ -37,5 +37,5 @@
         display: none;
       }
     }
-  '';
+  '' + utilities.cssFontsGlobal config;
 }

@@ -1,4 +1,4 @@
-{config, globals, pkgs, utilities, ...}:
+{config, globals, lib, pkgs, utilities, ...}:
   with config.lib.stylix.colors.withHashtag;
 {
   programs.firefox = {
@@ -55,13 +55,21 @@
             folderList = 2;
           };
         };
+
+        font.name = let
+          font = lib.mkDefault config.stylix.fonts.emoji.name;
+        in {
+          monospace.x-western = font;
+          sans-serif.x-western = font;
+          serif.x-western = font;
+        };
       };
 
       userChrome = ''
         #browser {
           background: ${base00} !important;
         }
-      '';
+      '' + utilities.cssFontsGlobal config;
     };
 
     package = pkgs.inputs.zen.default;
