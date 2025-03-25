@@ -1255,6 +1255,7 @@
         "nvim": "nvim",
         "persist": "persist",
         "silicon": "silicon",
+        "sops": "sops",
         "stylix": "stylix",
         "xremap": "xremap",
         "zen": "zen"
@@ -1318,6 +1319,26 @@
         "owner": "schphe",
         "ref": "modified",
         "repo": "nixos-apple-silicon",
+        "type": "github"
+      }
+    },
+    "sops": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1742700801,
+        "narHash": "sha256-ZGlpUDsuBdeZeTNgoMv+aw0ByXT2J3wkYw9kJwkAS4M=",
+        "owner": "mic92",
+        "repo": "sops-nix",
+        "rev": "67566fe68a8bed2a7b1175fdfb0697ed22ae8852",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mic92",
+        "repo": "sops-nix",
         "type": "github"
       }
     },

@@ -1,4 +1,4 @@
-{globals, utilities, ...}: {
+{config, globals, utilities, ...}: {
   imports = (utilities.importDirs ./.);
 
   nix.settings = {
@@ -29,8 +29,17 @@
     allowUnfree = true;
   };
 
-  users.users.${globals.username} = {
-    initialPassword = "12345";
+  sops.secrets = {
+    ${globals.username} = {
+      neededForUsers = true;
+    };
+  };
+
+  users.users.${globals.username} = let
+    password = config.sops.secrets.${globals.username};
+  in {
+    hashedPasswordFile = password.path;
+
     isNormalUser = true;
 
     extraGroups = [

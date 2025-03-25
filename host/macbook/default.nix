@@ -47,6 +47,10 @@
     powerOnBoot = true;
   };
 
+  console = {
+    keyMap = "trq";
+  };
+
   networking = {
     hostName = "macbook";
   };

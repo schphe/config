@@ -20,6 +20,11 @@
       url = "github:nix-community/impermanence";
     };
 
+    sops = {
+      url = "github:mic92/sops-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     stylix = {
       url = "github:danth/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -83,6 +88,7 @@
       manager.nixosModules.default
       persist.nixosModules.default
       stylix.nixosModules.stylix
+      sops.nixosModules.default
     ];
 
     home = with inputs; [
