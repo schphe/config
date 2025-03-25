@@ -3,11 +3,10 @@
     enable = true;
     package = pkgs.vscodium;
 
-    extensions = with pkgs.vscode-extensions; [
-      rust-lang.rust-analyzer
-    ];
-
     profiles.default = {
+      extensions = with pkgs.vscode-extensions; [
+        rust-lang.rust-analyzer
+      ];
     };
   };
 

@@ -21,7 +21,8 @@
       ];
 
       modules-right = [
-        "network"
+        "network#vpn"
+        "network#wifi"
         "pulseaudio"
         "battery"
       ];
@@ -41,8 +42,16 @@
         tooltip-format = "{:%d/%m/%y}";
       };
 
-      network = {
-        format-disconnected = "";
+      "network#vpn" = {
+        interface = "proton0";
+        format = " ";
+        format-disconnected = "*";
+        tooltip = false;
+      };
+
+      "network#wifi" = {
+        interface = "wlan0";
+        format-disconnected = " ";
         format-wifi = "{signalStrength}%";
         tooltip-format = "{essid}\n{gwaddr}";
       };
