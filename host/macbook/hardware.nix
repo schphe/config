@@ -16,9 +16,9 @@
   boot.initrd = {
     luks.devices = {
       "encrypted" = {
-        #allowDiscards = true;
-        device = "/dev/disk/by-uuid/484eece9-1273-48ee-b3d5-769506dde2fa";
         preLVM = true;
+        allowDiscards = true;
+        device = "/dev/disk/by-uuid/484eece9-1273-48ee-b3d5-769506dde2fa";
       };
     };
 
@@ -65,8 +65,7 @@
 
       options = [
         "subvol=root"
-        #"discard" ?
-        #"defaults" ?
+        "discard"
       ];
     };
     
