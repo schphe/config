@@ -26,7 +26,7 @@ in rec {
     fonts = config.stylix.fonts;
   in ''
     * {
-      font-family: "${fonts.emoji.name}", "${fonts.serif.name}";
+      font-family: "${fonts.serif.name}", "${fonts.emoji.name}";
     }
   '';
 
