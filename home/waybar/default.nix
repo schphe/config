@@ -50,7 +50,7 @@
       };
 
       "network#wifi" = {
-        interface = "wlp1s0f0";
+        interface = "wlan0";
         format-linked = "";
         format-ethernet = "";
         format-disconnected = "";
