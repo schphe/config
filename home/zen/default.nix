@@ -56,12 +56,10 @@
           };
         };
 
-        font.name = let
-          font = lib.mkDefault config.stylix.fonts.emoji.name;
-        in {
-          monospace.x-western = font;
-          sans-serif.x-western = font;
-          serif.x-western = font;
+        font = {
+          name-list = {
+            emoji = config.stylix.fonts.emoji.name;
+          };
         };
       };
 
