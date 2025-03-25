@@ -1,22 +1,11 @@
-{globals, pkgs, ...}: {
+{globals, lib, pkgs, ...}: {
   networking = {
-    networkmanager = {
-      enable = true;
-
-      wifi = {
-        backend = "iwd";
-      };
+    firewall = {
+      checkReversePath = "loose";
     };
 
-    wireless.iwd = {
+    networkmanager = {
       enable = true;
-
-      settings = {
-        General = {
-          EnableNetworkConfiguration = true;
-          AddressRandomization = "network";
-        };
-      };
     };
   };
 

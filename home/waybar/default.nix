@@ -44,16 +44,18 @@
 
       "network#vpn" = {
         interface = "proton0";
-        format = " ";
+        format = "";
         format-disconnected = "*";
         tooltip = false;
       };
 
       "network#wifi" = {
         interface = "wlan0";
-        format-disconnected = " ";
+        format-linked = "";
+        format-ethernet = "";
+        format-disconnected = "";
         format-wifi = "{signalStrength}%";
-        tooltip-format = "{essid}\n{gwaddr}";
+        tooltip-format = "{essid}";
       };
 
       pulseaudio = {};
