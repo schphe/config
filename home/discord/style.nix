@@ -10,31 +10,45 @@
           ) 3)
         ) 9)
       )}
+
+      --bg-brand: #83a598 !important;
+
+      --theme-base-color: ${base00};
+      --theme-base-color-amount: 100%;
+
+      --border-faint: #00000000 !important;
+      --chat-background-default: #00000000 !important;
+
+      --custom-app-top-bar-height: 0px;
     }
 
-    .recentsIcon_ea0547,
-    .recentsIcon_c99c29 {
+    .guilds_c48ade {
+      margin-top: 15px;
+    }
+
+    .button_e6e74f,
+    .trailing_c38106,
+    .emojiButton__04eed {
       display: none;
     }
 
+    .buttons__74017 {
+      margin-right: -15px !important;
+    }
+
+    .panels_c48ade {
+      background: #00000000 !important;
+    }
+
+    .container_c48ade {
+      --custom-chat-input-margin-bottom: 5px;
+    }
+
     @media (max-width: 1000px) {
-      .form_f75fb0 {
-        margin-bottom: -20px;
-        margin-left: -3px;
-        padding: 0px;
-      }
-
-      .title_f75fb0 {
-        padding-left: 15px;
-      }
-
       .buttons__74017,
-      .channelAppLauncher_e6e74f,
-      .toolbar__9293f,
-      .guilds_c48ade,
       .sidebar_c48ade,
-      .toolbar_fc4f04 {
-        display: none;
+      .toolbar__9293f {
+        display: none !important;
       }
     }
   '' + utilities.cssFontsGlobal config;

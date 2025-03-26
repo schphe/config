@@ -38,6 +38,7 @@
       };
 
       useQuickCss = true;
+      disableMinSize = true;
     };
   };
 
