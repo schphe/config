@@ -1,8 +1,7 @@
-keys:
-  - &primary age1pfmw28wvd6qgtg9vcepttgkxx3pvv88kugn7pwwh3pfzu7davc7qxg5udp
-
 creation_rules:
-  - path_regex: conf/sops/secret.yaml$
-    key_groups:
-    - age:
-        - *primary
+  - path_regex: 'vault/system/BerkeleyMonoVariable\.ttf\.enc\.yaml$'
+    age: 'age1mtk5tx0xrr5lwyjurfyd2uz2kl0549vx922p2lvvm4ck9jfpc96su8hwhd,age1vm9c9kvzsdrrrn8kndjm7ea79ns0lnw3u30u4enfwca25m0xheeqw7etzm'
+  - path_regex: 'vault/system/.*\.enc\.ya?ml$'
+    age: 'age1mtk5tx0xrr5lwyjurfyd2uz2kl0549vx922p2lvvm4ck9jfpc96su8hwhd'
+  - path_regex: 'vault/projects/.*\.enc\.ya?ml$'
+    age: 'age1vm9c9kvzsdrrrn8kndjm7ea79ns0lnw3u30u4enfwca25m0xheeqw7etzm'

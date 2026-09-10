@@ -1,0 +1,115 @@
+input {
+    keyboard {
+        xkb {
+            layout "tr"
+        }
+    }
+    touchpad {
+        natural-scroll
+    }
+}
+
+output "eDP-1" {
+    scale 1.575
+}
+
+layout {
+    gaps 12
+    background-color "transparent"
+    center-focused-column "never"
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+    }
+    default-column-width { proportion 0.5; }
+}
+
+overview {
+    workspace-shadow {
+        off
+    }
+}
+
+window-rule {
+    geometry-corner-radius 5
+    clip-to-geometry true
+}
+
+window-rule {
+    match app-id="dev.noctalia.Noctalia"
+    open-floating true
+    default-column-width { fixed 1080; }
+    default-window-height { fixed 920; }
+}
+
+layer-rule {
+    match namespace="^noctalia-wallpaper"
+    place-within-backdrop true
+}
+
+debug {
+    honor-xdg-activation-with-invalid-serial
+}
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+prefer-no-csd
+screenshot-path "~/pictures/screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+spawn-at-startup "protonmail-bridge-gui"
+spawn-at-startup "thunderbird"
+spawn-at-startup "vesktop"
+
+binds {
+    Mod+Return { spawn "ghostty"; }
+    Mod+W { spawn "helium" "--new-window"; }
+    Mod+Space { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
+    Mod+S { spawn "noctalia" "msg" "panel-toggle" "control-center"; }
+    Mod+Comma { spawn "noctalia" "msg" "settings-toggle"; }
+    Mod+P { spawn "wl-color-picker"; }
+    Mod+V { spawn "noctalia" "msg" "panel-toggle" "clipboard"; }
+    Mod+Shift+C { spawn "noctalia" "msg" "clipboard-clear"; }
+    Mod+Shift+Return { spawn "thunar"; }
+    Mod+Shift+S { spawn "noctalia" "msg" "screenshot-annotate"; }
+    Alt+Tab { spawn "noctalia" "msg" "window-switcher"; }
+    XF86AudioRaiseVolume { spawn "noctalia" "msg" "volume-up"; }
+    XF86AudioLowerVolume { spawn "noctalia" "msg" "volume-down"; }
+    XF86AudioMute { spawn "noctalia" "msg" "volume-mute"; }
+    XF86MonBrightnessUp { spawn "noctalia" "msg" "brightness-up" "eDP-1" "5%"; }
+    XF86MonBrightnessDown { spawn "noctalia" "msg" "brightness-down" "eDP-1" "5%"; }
+    Mod+Q { close-window; }
+    Mod+H { focus-column-left; }
+    Mod+L { focus-column-right; }
+    Mod+J { focus-window-down; }
+    Mod+K { focus-window-up; }
+    Mod+Shift+H { move-column-left; }
+    Mod+Shift+L { move-column-right; }
+    Mod+Shift+J { move-window-down; }
+    Mod+Shift+K { move-window-up; }
+    Mod+F { maximize-column; }
+    Mod+Shift+F { toggle-window-floating; }
+    Mod+1 { focus-workspace 1; }
+    Mod+2 { focus-workspace 2; }
+    Mod+3 { focus-workspace 3; }
+    Mod+4 { focus-workspace 4; }
+    Mod+5 { focus-workspace 5; }
+    Mod+6 { focus-workspace 6; }
+    Mod+7 { focus-workspace 7; }
+    Mod+8 { focus-workspace 8; }
+    Mod+9 { focus-workspace 9; }
+    Mod+Ctrl+1 { move-column-to-workspace 1; }
+    Mod+Ctrl+2 { move-column-to-workspace 2; }
+    Mod+Ctrl+3 { move-column-to-workspace 3; }
+    Mod+Ctrl+4 { move-column-to-workspace 4; }
+    Mod+Ctrl+5 { move-column-to-workspace 5; }
+    Mod+Ctrl+6 { move-column-to-workspace 6; }
+    Mod+Ctrl+7 { move-column-to-workspace 7; }
+    Mod+Ctrl+8 { move-column-to-workspace 8; }
+    Mod+Ctrl+9 { move-column-to-workspace 9; }
+    Mod+Shift+E { quit; }
+}
+
+include "stylix.kdl"

@@ -1,0 +1,337 @@
+FILE brcm/brcmfmac4355c1-pcie.apple,hawaii-YSBC-m-2.3.txt SHA256 de541e00d270f9281aae26e69b725726377a0a723ae6a2ad6f5fd5695ecf2bd9
+FILE brcm/brcmfmac4355c1-pcie.apple,hawaii-YSBC-m-2.5.txt SHA256 3534748e3002b261d9a762e6193151d6d6a96afe3a15e828740af609b5be250e
+FILE brcm/brcmfmac4355c1-pcie.apple,hawaii-YSBC-u-4.1.txt SHA256 58b46c15ff838c090ad368f7efd8c05b9987f512bed1593eae691fa115fe3d30
+FILE brcm/brcmfmac4355c1-pcie.apple,hawaii-YSBC-u-4.3.txt SHA256 45f9bc9979e3a56161a536a0bd93794ab7c145aef979669703f6a82f913923ae
+FILE brcm/brcmfmac4355c1-pcie.apple,hawaii.bin SHA256 977725cdb6abb9fffa0101f3cd1f9b3ed615d4274633a18d8bc66f690bfa2513
+FILE brcm/brcmfmac4355c1-pcie.apple,hawaii.clm_blob SHA256 128d748c950b682d385c1257178318e649f0e1637c02108c2eb1315a0da615cc
+FILE brcm/brcmfmac4355c1-pcie.apple,hawaii.txcap_blob SHA256 fe64b0970b96a517837e9a7ebce777266150dc005f9063bb24c25c100b1cae67
+FILE brcm/brcmfmac4364b2-pcie.apple,ekans-HRPN-m-7.5.txt SHA256 4eaad196e12c07c08dd35bbcc40d3f3ee089538d3b0d703cac9d447d2e533598
+FILE brcm/brcmfmac4364b2-pcie.apple,ekans-HRPN-m-7.7.txt SHA256 c0d835fdc2ca34ebccf1d59d599b375eba03d329fe03ae159722f7e6e73692c9
+FILE brcm/brcmfmac4364b2-pcie.apple,ekans-HRPN-u.txt SHA256 8fe6c12a98b8e1029ac59255c8d3d3c25c85a650b27b5112c93dbb809b2ea870
+FILE brcm/brcmfmac4364b2-pcie.apple,ekans.bin SHA256 bf088a6182a7078c9b932cb858712fa6a8cef8ac03882dad33c3ba5399e248c6
+FILE brcm/brcmfmac4364b2-pcie.apple,ekans.clm_blob SHA256 e99d1666a1598a68b5dde7ab4f868c3790cf291edef8c4c165f4991f27dc5b2d
+FILE brcm/brcmfmac4364b2-pcie.apple,ekans.txcap_blob SHA256 8572865b465364091eca8532579e7c70552ad1fd46011c9b96daccad6b5d78bb
+FILE brcm/brcmfmac4364b2-pcie.apple,hanauma-HRPN-m.txt SHA256 1e4cbea5f607565193016b18b171924555aef8b20f93b103250dd53c4837a754
+FILE brcm/brcmfmac4364b2-pcie.apple,hanauma-HRPN-u.txt SHA256 9b3673c55648e4af1773ab4828dba134385f1c33bed7af5b2edac3070e8fa83a
+LINK brcm/brcmfmac4364b2-pcie.apple,hanauma.bin brcm/brcmfmac4364b2-pcie.apple,ekans.bin
+FILE brcm/brcmfmac4364b2-pcie.apple,hanauma.clm_blob SHA256 6c578d216167f035184b469770408e406d72ec19d8bba8eb513b9306615ae5ef
+FILE brcm/brcmfmac4364b2-pcie.apple,hanauma.txcap_blob SHA256 cecb65d8e5f958c194fc3bea97ec984a908c0dae16688b5ef8dcf0c444c1a943
+FILE brcm/brcmfmac4364b2-pcie.apple,kauai-HRPN-m.txt SHA256 18033638c0e044da742d0e53b529508a84a414d966132ecbca24130b0d606edc
+FILE brcm/brcmfmac4364b2-pcie.apple,kauai-HRPN-u.txt SHA256 dc976821d53f1a61b066ab0d09d82a3da2b2725e70182029d60964129bf762e3
+LINK brcm/brcmfmac4364b2-pcie.apple,kauai.bin brcm/brcmfmac4364b2-pcie.apple,ekans.bin
+FILE brcm/brcmfmac4364b2-pcie.apple,kauai.clm_blob SHA256 c07bb8da66feb582d16ccd5c4f2b897cb91beb65a7fa964161b96e9457b5b398
+FILE brcm/brcmfmac4364b2-pcie.apple,kauai.txcap_blob SHA256 094e1e6221b5e95e493793240db550dd581bb86e125c70a98bd16c3defafebb8
+FILE brcm/brcmfmac4364b2-pcie.apple,lanai-HRPN-m.txt SHA256 9332e47b052c00d6f34e30e70ddb7ce93d0e26883734f9c5d9fb76b6e84b0f5b
+FILE brcm/brcmfmac4364b2-pcie.apple,lanai-HRPN-u.txt SHA256 7d15d2f6346a1e8bbd0de1f4f63c75127baafb13be6901530eadf347bbafe362
+LINK brcm/brcmfmac4364b2-pcie.apple,lanai.bin brcm/brcmfmac4364b2-pcie.apple,ekans.bin
+FILE brcm/brcmfmac4364b2-pcie.apple,lanai.clm_blob SHA256 e85877fa4474d04cffedc1c3c6264215111ea16cfa8c63ed08f8b471bce2f7e1
+FILE brcm/brcmfmac4364b2-pcie.apple,lanai.txcap_blob SHA256 3e49deec9822ddad6b81116aa7cb3e475b1479c2dd7ec3eec1c29b554f21a829
+FILE brcm/brcmfmac4364b2-pcie.apple,maui-HRPN-m-7.5.txt SHA256 0855b388d6b44c38c4a45a5482a64b168fc104df15cc1f957444bd0f725c0676
+FILE brcm/brcmfmac4364b2-pcie.apple,maui-HRPN-m-7.7.txt SHA256 da2f16cba6e7e078142c1fefc230ad7d022994169a8eade5fbaa591165651840
+FILE brcm/brcmfmac4364b2-pcie.apple,maui-HRPN-u.txt SHA256 01c14a455d109e384b73e4285bf53613eb292cde6389294faaccb8ec409c773f
+LINK brcm/brcmfmac4364b2-pcie.apple,maui.bin brcm/brcmfmac4364b2-pcie.apple,ekans.bin
+FILE brcm/brcmfmac4364b2-pcie.apple,maui.clm_blob SHA256 6e3c005b5ecbe24c0cd6d48329c0147b31d67df829c6837c7abd2fbc3a9c8ef6
+FILE brcm/brcmfmac4364b2-pcie.apple,maui.txcap_blob SHA256 05f757f9c401369b2c45c18e16b0222e4718217578c78f6add614e5d41f80d2c
+FILE brcm/brcmfmac4364b2-pcie.apple,midway-HRPN-m.txt SHA256 5bcfb28052807f4c62135d02c4f517a943f4c662527a76b8e9c9705fca3bd187
+FILE brcm/brcmfmac4364b2-pcie.apple,midway-HRPN-u.txt SHA256 aaddc36d1875e06d5b23ad314102f6529bbfe50669ea39f7369b5aa47fdc7bff
+LINK brcm/brcmfmac4364b2-pcie.apple,midway.bin brcm/brcmfmac4364b2-pcie.apple,ekans.bin
+FILE brcm/brcmfmac4364b2-pcie.apple,midway.clm_blob SHA256 33a9b6da66ee2561a0724f801dfbbec171eda44d5ca3e9eccac6c7b603171d3a
+FILE brcm/brcmfmac4364b2-pcie.apple,midway.txcap_blob SHA256 1e780394d42a2ad2a85a7329edc43a52648b40f702f82917d20fe10cb23b524e
+FILE brcm/brcmfmac4364b2-pcie.apple,nihau-HRPN-m.txt SHA256 6df3c62b20f359428ad2671dd73594ab690b2497ba2ca6a83700127214afd8f1
+FILE brcm/brcmfmac4364b2-pcie.apple,nihau-HRPN-u.txt SHA256 c22e4c7330c2c121349e653dcc8dc045778235f0f19913cefe5ecd902c2ef549
+LINK brcm/brcmfmac4364b2-pcie.apple,nihau.bin brcm/brcmfmac4364b2-pcie.apple,ekans.bin
+FILE brcm/brcmfmac4364b2-pcie.apple,nihau.clm_blob SHA256 357d72ca9bf40de3ea5c7027e153a1c55a64bbb6838c9580e425a9a1b004fceb
+FILE brcm/brcmfmac4364b2-pcie.apple,nihau.txcap_blob SHA256 0a0a5227a4cd3af8e83f76504e28f07d180ff161122dcff7a594efc71536657b
+FILE brcm/brcmfmac4364b3-pcie.apple,bali-HRPN-m.txt SHA256 9f1ed817311bb7caf25931fdac79e898e349c06bcb266b3fc0e39760daca440d
+FILE brcm/brcmfmac4364b3-pcie.apple,bali-HRPN-u.txt SHA256 3379a394ab8e1b883514b677876cd158d654e7377bc35f43ab99f6d2ae37ea25
+FILE brcm/brcmfmac4364b3-pcie.apple,bali.bin SHA256 f6f398255f7dab0ce5a3b13699f602e0d0e6d80fdb5c16bb9a282b0a8735412b
+FILE brcm/brcmfmac4364b3-pcie.apple,bali.clm_blob SHA256 45e394e7c49d284247cdfec6a7feae982c50a1c2e5c2a1840469107744962808
+FILE brcm/brcmfmac4364b3-pcie.apple,bali.txcap_blob SHA256 bdbc1e7043255ddcf2299ec60e47745ef23aa39165694766fe30f03e5b9a66b4
+FILE brcm/brcmfmac4364b3-pcie.apple,borneo-HRPN-m.txt SHA256 e720b9f174edb8c05c3aa96415e17719a0b74e9530a2d4edceea2ee398fe8b47
+FILE brcm/brcmfmac4364b3-pcie.apple,borneo-HRPN-u-7.7.txt SHA256 140f6b7e0e61e0215086072f32ccd99000cae8e7d037a0f8978f8c3912ce4668
+FILE brcm/brcmfmac4364b3-pcie.apple,borneo-HRPN-u-7.9.txt SHA256 acd89323afe4f85eacf1b8c9be1fe8da12ce74552ede2f71d3850777a7ea7320
+LINK brcm/brcmfmac4364b3-pcie.apple,borneo.bin brcm/brcmfmac4364b3-pcie.apple,bali.bin
+FILE brcm/brcmfmac4364b3-pcie.apple,borneo.clm_blob SHA256 4d8b40a37df4b40f11e7b5b64a4ec6694390a22c3255d3f0055de15e99d817ad
+FILE brcm/brcmfmac4364b3-pcie.apple,borneo.txcap_blob SHA256 9467349d53fa7e37aab37159300d68fde2054f540cd82fa0a47032e0bb88f0fb
+FILE brcm/brcmfmac4364b3-pcie.apple,hanauma-HRPN-m.txt SHA256 112ba777fa8ba43a25b693e08da2e037f512dae7c262f625b03c927c89e91c91
+FILE brcm/brcmfmac4364b3-pcie.apple,hanauma-HRPN-u.txt SHA256 601f54c33d4a47908da11fd3154a6fc55fbd88c547849d869598dcb7e044dd07
+LINK brcm/brcmfmac4364b3-pcie.apple,hanauma.bin brcm/brcmfmac4364b3-pcie.apple,bali.bin
+FILE brcm/brcmfmac4364b3-pcie.apple,hanauma.clm_blob SHA256 466dee741b51455b2c16bed901f734f7bc19d373a502c62ceca43af988dc4f0a
+FILE brcm/brcmfmac4364b3-pcie.apple,hanauma.txcap_blob SHA256 a8f2a6f724b0722191b9f43f051b5d201dc35ac2fe053c3b14c6b505c88ce2d7
+FILE brcm/brcmfmac4364b3-pcie.apple,kahana-HRPN-m.txt SHA256 100ac581565bb014e19f81ca2bb0958976dac5b43c05af650c7d4723e8b76f29
+FILE brcm/brcmfmac4364b3-pcie.apple,kahana-HRPN-u.txt SHA256 83e60aa38d84ac69310d36c726cf2767af9901765eb6dfcc34b826b49ed54c6b
+LINK brcm/brcmfmac4364b3-pcie.apple,kahana.bin brcm/brcmfmac4364b3-pcie.apple,bali.bin
+FILE brcm/brcmfmac4364b3-pcie.apple,kahana.clm_blob SHA256 18decc887e780ca0ad799e58114feb7c7ff0a87e9ee0784a541fee66e74fdd98
+FILE brcm/brcmfmac4364b3-pcie.apple,kahana.txcap_blob SHA256 ea11b0352039bbd1713d4e1081d2e51119d2d25c168dcadb0b27dc0b3c7691b0
+FILE brcm/brcmfmac4364b3-pcie.apple,kure-HRPN-m.txt SHA256 653d42d07239e3d1ba96b5221316d9e0d5d4e9cc5937905b0198454da1329592
+FILE brcm/brcmfmac4364b3-pcie.apple,kure-HRPN-u.txt SHA256 9df096fb2fca60aa639cd57c9a44d881de3b76a0cbd3243d4a50dbb4ba9bddca
+LINK brcm/brcmfmac4364b3-pcie.apple,kure.bin brcm/brcmfmac4364b3-pcie.apple,bali.bin
+FILE brcm/brcmfmac4364b3-pcie.apple,kure.clm_blob SHA256 ba13250128dc120c9fd2ba6707854c3680bf10a4ccb28328a6b2bb66dd0421d0
+FILE brcm/brcmfmac4364b3-pcie.apple,kure.txcap_blob SHA256 7366c1826d32739069cef1e3032b975f62f2f6a0ef9c28fa607f3ee0769954e5
+FILE brcm/brcmfmac4364b3-pcie.apple,trinidad-HRPN-m.txt SHA256 80d3f4c897dd355cbf6e684e3b9c856c88391fb82b612f9f542fe30d42a5e795
+FILE brcm/brcmfmac4364b3-pcie.apple,trinidad-HRPN-u.txt SHA256 621d5e09ca105266f5fae3e48f15730aeacb9b6e92e8adcaadb8a6f3a14c43ef
+LINK brcm/brcmfmac4364b3-pcie.apple,trinidad.bin brcm/brcmfmac4364b3-pcie.apple,bali.bin
+FILE brcm/brcmfmac4364b3-pcie.apple,trinidad.clm_blob SHA256 accac04c3de2643074c43cc21e51bed7ac6cebb66374c152371acb6c5bb3abcd
+FILE brcm/brcmfmac4364b3-pcie.apple,trinidad.txcap_blob SHA256 2cebc3e9d9af39c0c666dbad73a839df907605b6c23d04d4c146d53452b88d87
+FILE brcm/brcmfmac4377b3-pcie.apple,fiji-SPPR-m.txt SHA256 abee63f633211b1a30b6ac341d09bf7fb60a8774b05f2d6d79d11a6aa27789fc
+FILE brcm/brcmfmac4377b3-pcie.apple,fiji-SPPR-u.txt SHA256 ecdb0cee44568cb3bc1e19a6dda160076dcefffc0f18882ad88b191b1e7dfd15
+FILE brcm/brcmfmac4377b3-pcie.apple,fiji.bin SHA256 9d1682ca7bdfc964e5ad26de5e7ca7437a34e1ae13e6b816954214a665f3f604
+FILE brcm/brcmfmac4377b3-pcie.apple,fiji.clm_blob SHA256 2d14042c6486c90cd66a78f8d5e8391bd74e72c5cea4e86fc3c17f23724413a0
+FILE brcm/brcmfmac4377b3-pcie.apple,fiji.txcap_blob SHA256 22be57cec09747b4f40ce077d73ccd3bcf91ac3446463b14983dd3c9971bd56f
+LINK brcm/brcmfmac4377b3-pcie.apple,formosa-SPPR-m.txt brcm/brcmfmac4377b3-pcie.apple,fiji-SPPR-m.txt
+LINK brcm/brcmfmac4377b3-pcie.apple,formosa-SPPR-u.txt brcm/brcmfmac4377b3-pcie.apple,fiji-SPPR-u.txt
+LINK brcm/brcmfmac4377b3-pcie.apple,formosa.bin brcm/brcmfmac4377b3-pcie.apple,fiji.bin
+FILE brcm/brcmfmac4377b3-pcie.apple,formosa.clm_blob SHA256 6f1b249c3de06827106fb506ee49a7fb0fc8510558c6d2e90abc2678835f2371
+FILE brcm/brcmfmac4377b3-pcie.apple,formosa.txcap_blob SHA256 73c95d58932fa7a5c46e5316d5e0e051a01b9800273db02f52fde51e404b2bb3
+LINK brcm/brcmfmac4377b3-pcie.apple,tahiti-SPPR-m.txt brcm/brcmfmac4377b3-pcie.apple,fiji-SPPR-m.txt
+LINK brcm/brcmfmac4377b3-pcie.apple,tahiti-SPPR-u.txt brcm/brcmfmac4377b3-pcie.apple,fiji-SPPR-u.txt
+LINK brcm/brcmfmac4377b3-pcie.apple,tahiti.bin brcm/brcmfmac4377b3-pcie.apple,fiji.bin
+FILE brcm/brcmfmac4377b3-pcie.apple,tahiti.clm_blob SHA256 5ddaf27cc923b4e0ffca15be62645eaa71ec6e4c6e74dab3568afc9d70408fe7
+FILE brcm/brcmfmac4377b3-pcie.apple,tahiti.txcap_blob SHA256 670ea935de6e350035487762c0b7257dc9ad6eb5e99f1b76d067d9bccfd25d0a
+FILE brcm/brcmfmac4378b1-pcie.apple,atlantisb-RASP-m.txt SHA256 a88c2cb801fcbdca0672eb88d014d63ef526a042086de1a478abc4dfd967f60a
+FILE brcm/brcmfmac4378b1-pcie.apple,atlantisb-RASP-u.txt SHA256 1d6ac9ad32d42087db8a7d910325a30e9e10fae70fba161f8855a792c321a9d0
+FILE brcm/brcmfmac4378b1-pcie.apple,atlantisb.bin SHA256 c1c8e9ac706099da73b3657ccc2c44d5f3e42505979e0328923cc28940b90091
+FILE brcm/brcmfmac4378b1-pcie.apple,atlantisb.clm_blob SHA256 322fbc347d7ee69d8db0bb8483c9e7e8ac711390b1f4dd951c12c5ec153f4ab8
+FILE brcm/brcmfmac4378b1-pcie.apple,atlantisb.txcap_blob SHA256 6b517281b2b87a57bb9489c55fd25eec8ea9ec6ef451b1f3da0a3ed0834da112
+FILE brcm/brcmfmac4378b1-pcie.apple,capri-RASP-m.txt SHA256 60dd51538b4bf36da5b4da5a7ad0e28575f5e1e886f4a75897f567540bde3d74
+FILE brcm/brcmfmac4378b1-pcie.apple,capri-RASP-u.txt SHA256 baa5d25137d165c557b7f64600c7af51bf26f3a9a5450054567212b2346560ea
+FILE brcm/brcmfmac4378b1-pcie.apple,capri.bin SHA256 c3f183034b338b2344088f15f5973ebaa85e4722ae00ffca09daa5ecd089d69e
+FILE brcm/brcmfmac4378b1-pcie.apple,capri.clm_blob SHA256 931d4bfb903fb62a57dbcd16739ee071db2f962a5de31c0a4168213d438f6b09
+FILE brcm/brcmfmac4378b1-pcie.apple,capri.txcap_blob SHA256 00ee341a1a170d05be7bd79261de06f3f736e3c551f8524a76cd2744c39cf69a
+FILE brcm/brcmfmac4378b1-pcie.apple,honshu-RASP-m.txt SHA256 f504897e50fdd34ecb50772ff5f214559981f05609bc7eaa92177411ca4ef8e5
+FILE brcm/brcmfmac4378b1-pcie.apple,honshu-RASP-u.txt SHA256 55025ba4235210fb5a0f04377470030b1154383c0c629b4afef02c4bf9fdaeae
+LINK brcm/brcmfmac4378b1-pcie.apple,honshu.bin brcm/brcmfmac4378b1-pcie.apple,atlantisb.bin
+FILE brcm/brcmfmac4378b1-pcie.apple,honshu.clm_blob SHA256 595abdaf40bca15581e435272797fd822f211da2ad7f7dd057e31a8a82c28488
+FILE brcm/brcmfmac4378b1-pcie.apple,honshu.txcap_blob SHA256 2a32d180d36c27f5e4cefde2bab082b7f9afe16069de0ed405cf4ba3814e2f55
+LINK brcm/brcmfmac4378b1-pcie.apple,kyushu.bin brcm/brcmfmac4378b1-pcie.apple,atlantisb.bin
+FILE brcm/brcmfmac4378b1-pcie.apple,kyushu.clm_blob SHA256 4067a212d1fec5c1f30f2e65f07ceb567b6672bb2fb4d4b1c83ef6141bd9a9f5
+FILE brcm/brcmfmac4378b1-pcie.apple,kyushu.txcap_blob SHA256 745736b4ba14c91eb97a10fa0a9b56d4ea8ef5a15636971896a0728a748ff594
+LINK brcm/brcmfmac4378b1-pcie.apple,kyushu.txt brcm/brcmfmac4378b1-pcie.apple,honshu-RASP-u.txt
+FILE brcm/brcmfmac4378b1-pcie.apple,santorini-RASP-m.txt SHA256 2d3e12746b2368e080830561c6def519a3ceee814471725b0bcafb9abde77f91
+FILE brcm/brcmfmac4378b1-pcie.apple,santorini-RASP-u.txt SHA256 ceaf871197ca9fbadf1f3d907d7ced9876da40a3cc49fcab7b5c5e5663c17086
+LINK brcm/brcmfmac4378b1-pcie.apple,santorini.bin brcm/brcmfmac4378b1-pcie.apple,capri.bin
+FILE brcm/brcmfmac4378b1-pcie.apple,santorini.clm_blob SHA256 e68dc2eeb03ed269662c284ccaac95e91c9b9f4a3f61fb48f44388776daa4ca1
+FILE brcm/brcmfmac4378b1-pcie.apple,santorini.txcap_blob SHA256 cbf910c034e969d5ffc1604e72cbe2698bfbfe51fc3bdb824051590f2142e700
+FILE brcm/brcmfmac4378b1-pcie.apple,shikoku-RASP-m.txt SHA256 a293ce46ef655e7411153d515cb18c787512c692e5556534074f8cb7f3a3bb4e
+FILE brcm/brcmfmac4378b1-pcie.apple,shikoku-RASP-u.txt SHA256 d3af98e743a8528167d81dacd03de203e2d4c334ece0af5a8d72c4c4aff1b0eb
+LINK brcm/brcmfmac4378b1-pcie.apple,shikoku.bin brcm/brcmfmac4378b1-pcie.apple,atlantisb.bin
+FILE brcm/brcmfmac4378b1-pcie.apple,shikoku.clm_blob SHA256 aeeeeacffafba8b2d7dad8d9505501d3f6fb9ae195111c1c808ea24adc7fa037
+FILE brcm/brcmfmac4378b1-pcie.apple,shikoku.txcap_blob SHA256 2bc0be89cfe244dd8d228b1fc710513da26b43795c7e83c2991a1444eda2e3f6
+FILE brcm/brcmfmac4378b3-pcie.apple,kyushu.bin SHA256 5103e743c3d65766b8c671c8ce8169dacce307b01d4d520ab5b6d4594a6b473a
+FILE brcm/brcmfmac4378b3-pcie.apple,kyushu.clm_blob SHA256 8e739bec6d2205eddf76dbb3623f4feb40967241c342a5d420b9b9ac3d96f147
+FILE brcm/brcmfmac4378b3-pcie.apple,kyushu.txcap_blob SHA256 35b9508eca6b0f2327d6863145a4fbc0fa4ed452469c4f396e1395fcc211457e
+LINK brcm/brcmfmac4378b3-pcie.apple,kyushu.txt brcm/brcmfmac4378b1-pcie.apple,honshu-RASP-u.txt
+FILE brcm/brcmfmac4387c2-pcie.apple,hokkaido.bin SHA256 0c209ef0d3c42642c97ab33e18bb6949d2b161c3d5b4aa0b95a1de24353a5cdf
+FILE brcm/brcmfmac4387c2-pcie.apple,hokkaido.clm_blob SHA256 b6702142323cf58159fc86ce7eb7edbc768c58e11557df5a40dfaa578d30ebad
+FILE brcm/brcmfmac4387c2-pcie.apple,hokkaido.txcap_blob SHA256 c0366d08737a20a3f5eae31053d3f6db402b1e2dd31a9fd96f28d689e3d88893
+FILE brcm/brcmfmac4387c2-pcie.apple,hokkaido.txt SHA256 542b9c536335f5e1015446379e643353e3c7e68b23d167164ae1150f66e01bd1
+LINK brcm/brcmfmac4387c2-pcie.apple,madagascar.bin brcm/brcmfmac4387c2-pcie.apple,hokkaido.bin
+FILE brcm/brcmfmac4387c2-pcie.apple,madagascar.clm_blob SHA256 90deee506b60738c2425f2fd545361e7fd7946a25c79be7a4c790b81949093f3
+FILE brcm/brcmfmac4387c2-pcie.apple,madagascar.txcap_blob SHA256 4a3c084e91b03abe2b09f04a1dd9fd9ac3ed839bc2d3aa6ba54d5ce2faae32f0
+FILE brcm/brcmfmac4387c2-pcie.apple,madagascar.txt SHA256 17635f606ec6a3106397371722bf3cb0a21678cd849487a826e74b008454c826
+LINK brcm/brcmfmac4387c2-pcie.apple,maldives.bin brcm/brcmfmac4387c2-pcie.apple,hokkaido.bin
+FILE brcm/brcmfmac4387c2-pcie.apple,maldives.clm_blob SHA256 918af61eb6b5d5174da4e119aee2c9b9ac3a32cce2a1ef99cffc8794423c2f2b
+FILE brcm/brcmfmac4387c2-pcie.apple,maldives.txcap_blob SHA256 d65a89c05f66750355da370c5661815eeb3e31fc2b81b2462f114edf4dad9fb6
+FILE brcm/brcmfmac4387c2-pcie.apple,maldives.txt SHA256 78005025f58b5d6da38bf2fd55d3514f2b896298f0a427260443bf6d519e3649
+FILE brcm/brcmfmac4387c2-pcie.apple,okinawa.bin SHA256 cbf0ef654487ea5de3c9a1d87129cd3c77016b6bb642c31c9c5d984e040184e3
+FILE brcm/brcmfmac4387c2-pcie.apple,okinawa.clm_blob SHA256 effddf30491622bd7e5986b3f5c666d3445969d7380948e1bbd5549dd4cede4c
+FILE brcm/brcmfmac4387c2-pcie.apple,okinawa.txcap_blob SHA256 3b72aa2ed023c5d45bdf01f23f0cbf5469306abd4e4527b665c5c8aa2842038b
+FILE brcm/brcmfmac4387c2-pcie.apple,okinawa.txt SHA256 e42613475d9d5cf350809903fd830dfb827a49d9c382177cebffaff5ab6d5e1b
+LINK brcm/brcmfmac4387c2-pcie.apple,snake.bin brcm/brcmfmac4387c2-pcie.apple,hokkaido.bin
+FILE brcm/brcmfmac4387c2-pcie.apple,snake.clm_blob SHA256 4c12f8f9148ac7985188be51d84257907e99c6b256899c6fc14d1bf22dcb5622
+FILE brcm/brcmfmac4387c2-pcie.apple,snake.txcap_blob SHA256 2cd90c676945f525ee1d7da4472a4a1550f74e476627ed87dc6d03b674c7fa31
+FILE brcm/brcmfmac4387c2-pcie.apple,snake.txt SHA256 0b04307b26b2799af170288c50f39b07ebea68c948a10857c15e70ad5f79de90
+FILE brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt SHA256 55cf30ed1f858e002b88c61c1026bd99be2206344fd0b341cae1e5b0a59bcf9a
+LINK brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-2.1.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-2.3.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-2.5.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-2.7.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-2.9.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-3.1.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-3.3.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-3.5.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt
+FILE brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-4.1.txt SHA256 484c4770d60da8de4a4ba1abf77891c2db1b7d3b7b8f9748894044f81e25237b
+FILE brcm/brcmfmac4388b0-pcie.apple,amami.bin SHA256 d011649f88bc82f78ab970844d8280a359b30b8867e2b00a2601bf08d7e97dfc
+FILE brcm/brcmfmac4388b0-pcie.apple,amami.clm_blob SHA256 33f1c84322a4b0b37449fed833e0a701c7383d8b363c3b8697fda6344d9f87cf
+FILE brcm/brcmfmac4388b0-pcie.apple,amami.sig SHA256 40eb0c189ca33552c6d3942b3ffc92f8b7ce44c33ebe889467a1865c35e9684c
+FILE brcm/brcmfmac4388b0-pcie.apple,amami.txcap_blob SHA256 a1375cd0efd2d83eb73d224dc913c2cf4f772edeb9e693665da8f519b39bc0e8
+FILE brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt SHA256 53cddefda6d7f4ee7c40f46d5201720658a53f34a2e7bf3903f2b8792a495a86
+LINK brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-2.1.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-2.3.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-2.5.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-2.7.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-2.9.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-3.1.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-3.3.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-3.5.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt
+FILE brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-4.1.txt SHA256 057a002d988ba526fbd9cb9bba5dc5580a52f9f53be20662e81d107d17c20542
+FILE brcm/brcmfmac4388b0-pcie.apple,canary.bin SHA256 de1935053397211ea153a9be9ecbe2fc4e9ca0447e5877153729098ee76dd023
+FILE brcm/brcmfmac4388b0-pcie.apple,canary.clm_blob SHA256 f1fb26098bce14db288d2fb1b3387a1b04a4ad65c8a5f655aef86270159a957c
+FILE brcm/brcmfmac4388b0-pcie.apple,canary.sig SHA256 7efc4e3f3781391e36d0ab91a12be5b9551301319c3909ec158345260fa30b2d
+FILE brcm/brcmfmac4388b0-pcie.apple,canary.txcap_blob SHA256 9f6efb000270cf7c957c3d2193b8ecdbfc12d06c52b4426d2515e354daeff54b
+LINK brcm/brcmfmac4388b0-pcie.apple,java-WLMT-u-1.1.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,java-WLMT-u-2.1.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,java-WLMT-u-2.3.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,java-WLMT-u-2.5.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,java-WLMT-u-2.7.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,java-WLMT-u-2.9.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,java-WLMT-u-3.1.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,java-WLMT-u-3.3.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,java-WLMT-u-3.5.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,java-WLMT-u-4.1.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-4.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,java.bin brcm/brcmfmac4388b0-pcie.apple,canary.bin
+FILE brcm/brcmfmac4388b0-pcie.apple,java.clm_blob SHA256 31f7a9a66e24b3df4558bf85ddd00988f8c7c6179b8790b91e6e3642b928585b
+LINK brcm/brcmfmac4388b0-pcie.apple,java.sig brcm/brcmfmac4388b0-pcie.apple,canary.sig
+FILE brcm/brcmfmac4388b0-pcie.apple,java.txcap_blob SHA256 4cf6a3319339b6605d724b5606669ecafe79e2519308cfdccaf2160f6b924949
+FILE brcm/brcmfmac4388b0-pcie.apple,miyake-WLMT-u-1.1.txt SHA256 d6c9fa07c56242cc50abedf31054d79813dd6d7713c709e1f123b4bdc9feed39
+LINK brcm/brcmfmac4388b0-pcie.apple,miyake-WLMT-u-2.1.txt brcm/brcmfmac4388b0-pcie.apple,miyake-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,miyake-WLMT-u-2.3.txt brcm/brcmfmac4388b0-pcie.apple,miyake-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,miyake-WLMT-u-2.5.txt brcm/brcmfmac4388b0-pcie.apple,miyake-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,miyake-WLMT-u-2.7.txt brcm/brcmfmac4388b0-pcie.apple,miyake-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,miyake-WLMT-u-2.9.txt brcm/brcmfmac4388b0-pcie.apple,miyake-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,miyake-WLMT-u-3.1.txt brcm/brcmfmac4388b0-pcie.apple,miyake-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,miyake-WLMT-u-3.3.txt brcm/brcmfmac4388b0-pcie.apple,miyake-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,miyake-WLMT-u-3.5.txt brcm/brcmfmac4388b0-pcie.apple,miyake-WLMT-u-1.1.txt
+FILE brcm/brcmfmac4388b0-pcie.apple,miyake-WLMT-u-4.1.txt SHA256 7c11fc3def83614258e8c08a7166da081afa7cacbd7fe551cf4bfb9dd9d2f323
+LINK brcm/brcmfmac4388b0-pcie.apple,miyake.bin brcm/brcmfmac4388b0-pcie.apple,canary.bin
+FILE brcm/brcmfmac4388b0-pcie.apple,miyake.clm_blob SHA256 2335cbdecbc72549bb3e6be1e6b293a44774179a4bcacb19eb3fe1afdb8d823a
+LINK brcm/brcmfmac4388b0-pcie.apple,miyake.sig brcm/brcmfmac4388b0-pcie.apple,canary.sig
+FILE brcm/brcmfmac4388b0-pcie.apple,miyake.txcap_blob SHA256 259ac53dcee77c507b38f4d58a47bdec95f591e9b88c5daf08f426ea59f78402
+LINK brcm/brcmfmac4388b0-pcie.apple,sumatra-WLMT-u-1.1.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,sumatra-WLMT-u-2.1.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,sumatra-WLMT-u-2.3.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,sumatra-WLMT-u-2.5.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,sumatra-WLMT-u-2.7.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,sumatra-WLMT-u-2.9.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,sumatra-WLMT-u-3.1.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,sumatra-WLMT-u-3.3.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,sumatra-WLMT-u-3.5.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,sumatra-WLMT-u-4.1.txt brcm/brcmfmac4388b0-pcie.apple,canary-WLMT-u-4.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,sumatra.bin brcm/brcmfmac4388b0-pcie.apple,canary.bin
+FILE brcm/brcmfmac4388b0-pcie.apple,sumatra.clm_blob SHA256 dc51c9e8564def88f360e4c6954125290b87054d430540310fb9370546a4ec65
+LINK brcm/brcmfmac4388b0-pcie.apple,sumatra.sig brcm/brcmfmac4388b0-pcie.apple,canary.sig
+FILE brcm/brcmfmac4388b0-pcie.apple,sumatra.txcap_blob SHA256 c95e910de5c37314a3908bf823f6431e911938cf813ebecfeeefcd9f45056af8
+LINK brcm/brcmfmac4388b0-pcie.apple,tasmania-WLMT-u-1.1.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,tasmania-WLMT-u-2.1.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,tasmania-WLMT-u-2.3.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,tasmania-WLMT-u-2.5.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,tasmania-WLMT-u-2.7.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,tasmania-WLMT-u-2.9.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,tasmania-WLMT-u-3.1.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,tasmania-WLMT-u-3.3.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,tasmania-WLMT-u-3.5.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,tasmania-WLMT-u-4.1.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-4.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,tasmania.bin brcm/brcmfmac4388b0-pcie.apple,canary.bin
+FILE brcm/brcmfmac4388b0-pcie.apple,tasmania.clm_blob SHA256 4c160edd68ceb06999e97b2d66eafbf190145b86b56ad4b4f08682bdc87842c2
+LINK brcm/brcmfmac4388b0-pcie.apple,tasmania.sig brcm/brcmfmac4388b0-pcie.apple,canary.sig
+LINK brcm/brcmfmac4388b0-pcie.apple,tasmania.txcap_blob brcm/brcmfmac4388b0-pcie.apple,sumatra.txcap_blob
+LINK brcm/brcmfmac4388b0-pcie.apple,tokara-WLMT-u-1.1.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,tokara-WLMT-u-2.1.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,tokara-WLMT-u-2.3.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,tokara-WLMT-u-2.5.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,tokara-WLMT-u-2.7.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,tokara-WLMT-u-2.9.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,tokara-WLMT-u-3.1.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,tokara-WLMT-u-3.3.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,tokara-WLMT-u-3.5.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-1.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,tokara-WLMT-u-4.1.txt brcm/brcmfmac4388b0-pcie.apple,amami-WLMT-u-4.1.txt
+LINK brcm/brcmfmac4388b0-pcie.apple,tokara.bin brcm/brcmfmac4388b0-pcie.apple,amami.bin
+FILE brcm/brcmfmac4388b0-pcie.apple,tokara.clm_blob SHA256 34f61bd3dc9f37056a82d10a07619b3db0eff97d8ba6a6c72f2bdfa518103544
+LINK brcm/brcmfmac4388b0-pcie.apple,tokara.sig brcm/brcmfmac4388b0-pcie.apple,amami.sig
+FILE brcm/brcmfmac4388b0-pcie.apple,tokara.txcap_blob SHA256 7a17dc685d3beef828d706fa804277646b072f2aac3ad385a4b52d61c45de323
+FILE brcm/brcmfmac4388c0-pcie.apple,amami.bin SHA256 4961a0b540567e7a9e608589d0ff1a5aae69c6f014781bb6bdf6bc428cc6eaa3
+FILE brcm/brcmfmac4388c0-pcie.apple,amami.clm_blob SHA256 1f4b8347b18687d1e4b97463e7533103c94c1f4428170e1e2fa7f2c96761df9f
+FILE brcm/brcmfmac4388c0-pcie.apple,amami.sig SHA256 daf324d2ae829408ebc9ecb6b0809879ca9f8d4b23263c5d04fb0cc6f3129db3
+FILE brcm/brcmfmac4388c0-pcie.apple,amami.txcap_blob SHA256 2d5662c2ac2265abb94afa5f91853f51909d4e5cc1475ca96f0002642bb1f824
+FILE brcm/brcmfmac4388c0-pcie.apple,amami.txt SHA256 aab893ec81380f95203eb6fb4c8a2dc5a48b20f98e56ab2f23122565b4d64d8d
+FILE brcm/brcmfmac4388c0-pcie.apple,canary.bin SHA256 3cbce30c8a6ff19d6e323412636616784e81a3bb52151063c19d789b1ab3cc3d
+FILE brcm/brcmfmac4388c0-pcie.apple,canary.clm_blob SHA256 f7eea35919e75ad9fbf643fc3a24828ce6aecb22a9f568af58ed5397fa569b8f
+FILE brcm/brcmfmac4388c0-pcie.apple,canary.sig SHA256 693ac7dcdccd862788e82432d576688c716efdf2f1d786e86d83fcbe68aa6144
+FILE brcm/brcmfmac4388c0-pcie.apple,canary.txcap_blob SHA256 55fdeb127d15dd5901b779278241c2a77fd62cd43d415b48ab8bbaf60e930856
+FILE brcm/brcmfmac4388c0-pcie.apple,canary.txt SHA256 5d5a28e69cbcba6ad7d386cbf3db99ac6092100f60b453c899d57a8bf0b35ef2
+LINK brcm/brcmfmac4388c0-pcie.apple,java.bin brcm/brcmfmac4388c0-pcie.apple,canary.bin
+FILE brcm/brcmfmac4388c0-pcie.apple,java.clm_blob SHA256 dd500213bf58836f56b01d33be4aaad09a48e707577121d05b3c6c4164787dfd
+LINK brcm/brcmfmac4388c0-pcie.apple,java.sig brcm/brcmfmac4388c0-pcie.apple,canary.sig
+FILE brcm/brcmfmac4388c0-pcie.apple,java.txcap_blob SHA256 0c9169dbf71126a4350f4ccab3daef51277d40e0dc8fb5c149f444790cc5a221
+FILE brcm/brcmfmac4388c0-pcie.apple,java.txt SHA256 dc9977365debf2b9345a9d2dc4b150a45e78596698fff0bd35e343f9d75037d7
+LINK brcm/brcmfmac4388c0-pcie.apple,miyake.bin brcm/brcmfmac4388c0-pcie.apple,canary.bin
+FILE brcm/brcmfmac4388c0-pcie.apple,miyake.clm_blob SHA256 47726bf56414a2f4db38826cc23501395318426c295937f5b7529caf0c295712
+LINK brcm/brcmfmac4388c0-pcie.apple,miyake.sig brcm/brcmfmac4388c0-pcie.apple,canary.sig
+FILE brcm/brcmfmac4388c0-pcie.apple,miyake.txcap_blob SHA256 111d1f7306bd59dc62d532080d2b395b4f011bb1af1e724d618a584241cc474f
+FILE brcm/brcmfmac4388c0-pcie.apple,miyake.txt SHA256 331fca4c406e280d276f600dd28dbd4da435acafff308b46bf37f9dddf7642ae
+LINK brcm/brcmfmac4388c0-pcie.apple,sumatra.bin brcm/brcmfmac4388c0-pcie.apple,canary.bin
+FILE brcm/brcmfmac4388c0-pcie.apple,sumatra.clm_blob SHA256 8c7288b4ce1e506bd648d277a94ce330595a9c3ee57945b171782a64ca23f400
+LINK brcm/brcmfmac4388c0-pcie.apple,sumatra.sig brcm/brcmfmac4388c0-pcie.apple,canary.sig
+FILE brcm/brcmfmac4388c0-pcie.apple,sumatra.txcap_blob SHA256 a1bbe88a4fdbc6c847b6e978782c84d97cadf37f2ddfa1ffad355efeec619326
+FILE brcm/brcmfmac4388c0-pcie.apple,sumatra.txt SHA256 3b3b7d71200bed4f6add2064bbcc05188f4089cc6702faaa8f0f74811c82ed3a
+LINK brcm/brcmfmac4388c0-pcie.apple,tasmania.bin brcm/brcmfmac4388c0-pcie.apple,canary.bin
+FILE brcm/brcmfmac4388c0-pcie.apple,tasmania.clm_blob SHA256 2e2f9db5fe47363f93355051e2819d118210f75bf4dd648b34326fa8a9c901aa
+LINK brcm/brcmfmac4388c0-pcie.apple,tasmania.sig brcm/brcmfmac4388c0-pcie.apple,canary.sig
+FILE brcm/brcmfmac4388c0-pcie.apple,tasmania.txcap_blob SHA256 27e131d289b300a26a3986624c16fa5285effccc2b71bd820b9d25e53752b476
+FILE brcm/brcmfmac4388c0-pcie.apple,tasmania.txt SHA256 ae68d2b78f508e851a87638d7fdaecc22651df7b165af51ce6036bf35376391f
+LINK brcm/brcmfmac4388c0-pcie.apple,tokara.bin brcm/brcmfmac4388c0-pcie.apple,amami.bin
+FILE brcm/brcmfmac4388c0-pcie.apple,tokara.clm_blob SHA256 5e7801a4e2027029d8b1f019bf76e68590c4fe130b54a8d377d0b0bc21a14345
+LINK brcm/brcmfmac4388c0-pcie.apple,tokara.sig brcm/brcmfmac4388c0-pcie.apple,amami.sig
+FILE brcm/brcmfmac4388c0-pcie.apple,tokara.txcap_blob SHA256 0bacf02296a282492c034156bb02d87753923b618fa85ed31c4df9f30619a562
+LINK brcm/brcmfmac4388c0-pcie.apple,tokara.txt brcm/brcmfmac4388c0-pcie.apple,amami.txt
+FILE brcm/brcmbt4377b3-apple,formosa.bin SHA256 f47efe29fbd87ab0259818f089ed702de0d2277f81e17352b42f10a6e97b5e88
+FILE brcm/brcmbt4377b3-apple,formosa.ptb SHA256 68788bcf14e57ccb8acb95bfc2906c74819ab4949e9a4ef0d2b94ab90ab90823
+FILE brcm/brcmbt4378b1-apple,atlantisb-m.bin SHA256 0e0bdc3b3f8749d8cfbbfb48964e191d6ff59a5154473c6138173582fae683f1
+FILE brcm/brcmbt4378b1-apple,atlantisb-m.ptb SHA256 75a2726d210d819d5f34e1ca7042ebcd23e2243337ebb8a1eabb97c28839e0a1
+FILE brcm/brcmbt4378b1-apple,atlantisb-u.bin SHA256 42adf31e006ae7512eac3290aef8e7df8001493bc50c6bf594f73748d1d45178
+LINK brcm/brcmbt4378b1-apple,atlantisb-u.ptb brcm/brcmbt4378b1-apple,atlantisb-m.ptb
+FILE brcm/brcmbt4378b1-apple,capri-m.bin SHA256 4cc0e4c05b5c3b745da09920e53031428534e26e7e53d8b61594b573d9abcac2
+FILE brcm/brcmbt4378b1-apple,capri-m.ptb SHA256 d6f61e0ccbeaed87345f2e72bb7fdc05cbfd8e03516e60837b54dc75f5406591
+FILE brcm/brcmbt4378b1-apple,capri-u.bin SHA256 b69bc33ddb48217385cf17f84479e6316f80a3d69998c9cce1e814b51f50f8b6
+LINK brcm/brcmbt4378b1-apple,capri-u.ptb brcm/brcmbt4378b1-apple,capri-m.ptb
+FILE brcm/brcmbt4378b1-apple,honshu-m.bin SHA256 de426cdb6767daa3c76b74077c2f333cab531bef2dcb91e82f4f275b84bcf513
+FILE brcm/brcmbt4378b1-apple,honshu-m.ptb SHA256 d6644d1425c08cbf92d49e5715bcc7a7999c0f00b02413a83df684d5dc2e2e42
+FILE brcm/brcmbt4378b1-apple,honshu-u.bin SHA256 51028283065c0e53c049c1c78f4dd231bafcf50cdf25f851e949dffa630c8f95
+LINK brcm/brcmbt4378b1-apple,honshu-u.ptb brcm/brcmbt4378b1-apple,honshu-m.ptb
+FILE brcm/brcmbt4378b1-apple,santorini-m.bin SHA256 c52c1de9365a700634f1c4ab1f8ae910e18bcf5f872df63cde6810a6b0e7adab
+FILE brcm/brcmbt4378b1-apple,santorini-m.ptb SHA256 0c19a717f47584bf0bab2ad8947625db0de0411a38c02b3ce0fad21f0fe7e07d
+FILE brcm/brcmbt4378b1-apple,santorini-u.bin SHA256 eb8996393dc2f509e0fd05373f003c4e83c7da5b4711344acaf56145dcc53425
+LINK brcm/brcmbt4378b1-apple,santorini-u.ptb brcm/brcmbt4378b1-apple,santorini-m.ptb
+FILE brcm/brcmbt4378b1-apple,shikoku-m.bin SHA256 ae0295520c40fea41a341907ac3f530c5577809c38b8167c1ea1799de4940d87
+FILE brcm/brcmbt4378b1-apple,shikoku-m.ptb SHA256 01f059c62863ab3b2a1a85712451e67b2d921864d0f85529c1de664734c11645
+FILE brcm/brcmbt4378b1-apple,shikoku-u.bin SHA256 de5c3a1dd3e5d559a428565b12ea7a9186771dabc243074f5965a208805ad65a
+LINK brcm/brcmbt4378b1-apple,shikoku-u.ptb brcm/brcmbt4378b1-apple,shikoku-m.ptb
+FILE brcm/brcmbt4378b3-apple,kyushu-u.bin SHA256 7372c73bbf803a8ad25b8dbd7c300a8cb2b31587829416f53d9b59b193f0fa61
+LINK brcm/brcmbt4378b3-apple,kyushu-u.ptb brcm/brcmbt4378b1-apple,honshu-m.ptb
+FILE brcm/brcmbt4387c2-apple,hokkaido-u.bin SHA256 ad76b8aaa7bd5352c08e7642871de432e233a5b227b79af876179b8e1ff4f9cc
+FILE brcm/brcmbt4387c2-apple,hokkaido-u.ptb SHA256 979c51e8bbb37657de0e49e964922a9ee3aee83a5e63df6ff88b0714b74c4a98
+FILE brcm/brcmbt4387c2-apple,madagascar-u.bin SHA256 94eafac5a8885ebb2194acf52e380d2dbdacf8077d0330d2c8e0c1ad67b68196
+FILE brcm/brcmbt4387c2-apple,madagascar-u.ptb SHA256 754c5e3d73c9c9e07a5e54bb8386f01269c2c1016cf5237ed1ebe66a697c9971
+FILE brcm/brcmbt4387c2-apple,maldives-u.bin SHA256 61ccac5a875ead76bf845afb5127bf0417a8d474d34c13f325a2f602eb0be524
+FILE brcm/brcmbt4387c2-apple,maldives-u.ptb SHA256 992bb635f267c385a4ead8d217a34256a4e59dc2d6c7586f627b3c99b373333b
+FILE brcm/brcmbt4387c2-apple,okinawa-u.bin SHA256 009476ef7a73d7d198bdeeee9a66808526cd1063140544ceb4a71b9b835455d2
+FILE brcm/brcmbt4387c2-apple,okinawa-u.ptb SHA256 77853c87c0bab51be2039694b850526644a3e450eee2d64cdf69989e9adc375d
+FILE brcm/brcmbt4387c2-apple,snake-u.bin SHA256 0bc7af562adc23628ceb5928578223744fe0e0b27c4eb5e413cd9d46212dbbfe
+FILE brcm/brcmbt4387c2-apple,snake-u.ptb SHA256 5936f918f613a740227a7b152d799b56ca9066237a91dddb14189a97a4305b25
+FILE brcm/brcmbt4388b0-apple,amami-u.bin SHA256 c7b7c43d32c444a44a0aa7079ebbca08eeffb26a7c58a8765f9defb9d29269ac
+LINK brcm/brcmbt4388b0-apple,miyake-u.bin brcm/brcmbt4388b0-apple,amami-u.bin
+FILE brcm/brcmbt4388b0-apple,miyake-u.ptb SHA256 d3f0629cbfe4e7d1bca2900f2a628b5dc9a810dfdc8b7c81d8b79c464b97edfe
+LINK brcm/brcmbt4388b0-apple,tokara-u.bin brcm/brcmbt4388b0-apple,amami-u.bin
+FILE brcm/brcmbt4388c0-apple,amami-u.bin SHA256 c5b3e1e2db08a286d76111848345e8df4e620d19e10a941090c712b0868ccba2
+FILE brcm/brcmbt4388c0-apple,amami-u.ptb SHA256 d9cd3c62482b0760735f281391eaad51919bad905b2644327e13346bf96734f4
+FILE brcm/brcmbt4388c0-apple,canary-u.bin SHA256 92cd94181d365601ff440e06165a9c3f59a8a7d7898dce4cbbf5870961a0561f
+FILE brcm/brcmbt4388c0-apple,canary-u.ptb SHA256 36302e5bab7c6c19f520cbf82f22cb94319e94f7bfecdc940e269aaa33a3ed93
+FILE brcm/brcmbt4388c0-apple,java-u.bin SHA256 c63e31ed2a2d6a7fb7471589fe5914fd804ddf1387b5bcf677868dea676fd05c
+FILE brcm/brcmbt4388c0-apple,java-u.ptb SHA256 b61e79b7fdeadbba01fc2e0fd10ef4d2d9fd3c90776a1a01128ddcf986893844
+FILE brcm/brcmbt4388c0-apple,miyake-u.bin SHA256 dd1fbef93413469ed3303261359d0de3a11dbed40682f1b215579675bb9c8b8a
+FILE brcm/brcmbt4388c0-apple,miyake-u.ptb SHA256 45c6ff048e49072f2128f39aae92260ed9ffefdeb5fe5286712b37125df67884
+FILE brcm/brcmbt4388c0-apple,sumatra-u.bin SHA256 88f360918035d792e3bf8044f2f3206f21a4f36b23739aeb42590e4750820494
+FILE brcm/brcmbt4388c0-apple,sumatra-u.ptb SHA256 e591471b09d2df39c161e39a3156e22c728c63134cbb277d77ae55b65c0025f0
+FILE brcm/brcmbt4388c0-apple,tasmania-u.bin SHA256 9fefe7209d466769df90e725dc85003910bcf7d6fe4cf37bbd7e20d8242ee84b
+LINK brcm/brcmbt4388c0-apple,tasmania-u.ptb brcm/brcmbt4388c0-apple,miyake-u.ptb
+FILE brcm/brcmbt4388c0-apple,tokara-u.bin SHA256 7d92a1d4b89862993d7e521bfae260b16ca5bcf630460fdf23d22607ee4bd0b1
+FILE brcm/brcmbt4388c0-apple,tokara-u.ptb SHA256 a838483d535aab09f971c2b1ad837c24615262b291ff4855925a4625e250b7a6
+FILE apple/isp_1820_01XX.dat SHA256 23b7f76aca7e0ea8b462d8bc20a7a218b2d86015d62867fca6c5f38cdbf36e1d
+FILE apple/isp_1822_02XX.dat SHA256 1292c640b07497fed42f035319462a212108fd4c3fba2f3883226ef31bd5107f
+FILE apple/isp_1921_01XX.dat SHA256 b0c47560b845b40f8f096c82fac0f7adbaa171fbd10c84dc6a119593e2ab1d12
+FILE apple/isp_1922_02XX.dat SHA256 9483c3fa909d86debb8924e07be094335be75c9b2c63b7dddcbb727f2483363d
+FILE apple/isp_8720_01XX.dat SHA256 c398e4922eae2ad5acfdb312e4f9149482131440cfebda93fec0a38208fec12f
+FILE apple/isp_8723_01XX.dat SHA256 d05e1befd2a54dba750a24709bf9bd2bbb55a158b91ce047810292b0c4e17ce4
+FILE asmedia/asm2214a-apple.bin SHA256 b01d8884d1c99952794dce2a398cd64fadf10301f568e1523aaeccef4f15472d
+FILE apple/HmCA-3A0DC114D800 SHA256 8ca9b49ce2bf0c29d5484bb2ed6d51bbcf75e0d73232681bbc573f913cabbc42
+FILE apple/aop-als-cal.bin SHA256 93358e0148525b46dc75da98d071095205ce75566ff64cbcf844a097694bdc6c

@@ -1,0 +1,33 @@
+diff --git a/libc-shim/src/common.cpp b/libc-shim/src/common.cpp
+--- a/libc-shim/src/common.cpp
++++ b/libc-shim/src/common.cpp
+@@ -849,6 +849,9 @@
+         {"sigprocmask", +[](int __how, const void * __set, void * __oset) -> int {
+             return 0;
+         }},
++        {"pthread_sigmask", +[](int __how, const void * __set, void * __oset) -> int {
++            return 0;
++        }},
+         {"sigemptyset", +[](void*) -> int {
+             return 0;
+         }},
+diff --git a/libc-shim/src/cstdio.cpp b/libc-shim/src/cstdio.cpp
+--- a/libc-shim/src/cstdio.cpp
++++ b/libc-shim/src/cstdio.cpp
+@@ -1,5 +1,6 @@
+ #include "no-fortify.h"
+ #include <cstdlib>
++#include <unistd.h>
+ #include "cstdio.h"
+ #include "iorewrite.h"
+ 
+@@ -227,6 +228,9 @@
+         { "getauxval", (void*)+[](unsigned long) -> unsigned long {
+             return 0;
+         }},
++        { "ldiv", (void*)(::ldiv_t (*)(long, long)) ::ldiv },
++        { "lldiv", (void*)(::lldiv_t (*)(long long, long long)) ::lldiv },
++        { "getentropy", (void*)(int (*)(void *, size_t)) ::getentropy },
+         { "tcgetattr", (void*)+[](int, void*) -> int {
+             return 0;
+         }},
