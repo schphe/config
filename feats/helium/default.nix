@@ -32,10 +32,10 @@
           version = "5.5.0";
           hash = "sha256-vK7AgsQ54RxN9oP0PQfprD1EOSUdcrkcW0Uvl32sFdU=";
         };
-        darkreader = {
-          id = "eimadpbcbfnmbkopoojfekhnkhdbieeh";
-          version = "4.9.130";
-          hash = "sha256-hPyoKRkZ9of85y7XLHFpel8gOvbsQB52eOjrRFQARr0=";
+        unhook = {
+          id = "khncfooichmfjbepaaaebmommgaepoid";
+          version = "1.6.9";
+          hash = "sha256-hiKyaY3/CLquJqjDY49STmbfwSVi5yhpSBn6HvLigCM=";
         };
       };
 
@@ -128,79 +128,19 @@
         "chromium/policies/managed/nixos.json".source = policyFile;
       };
 
-      home-manager.users.schphe =
-        { config, ... }:
-        let
-          colors = config.lib.stylix.colors.withHashtag;
-        in
-        {
-          xdg.configFile."darkreader/base16-settings.json".text = builtins.toJSON {
-            schemeVersion = 0;
-            enabled = true;
-            fetchNews = false;
-            theme = {
-              mode = 1;
-              brightness = 100;
-              contrast = 100;
-              grayscale = 0;
-              sepia = 0;
-              useFont = true;
-              fontFamily = "Berkeley Mono Variable";
-              textStroke = 0;
-              engine = "dynamicTheme";
-              stylesheet = "";
-              darkSchemeBackgroundColor = colors.base00;
-              darkSchemeTextColor = colors.base05;
-              lightSchemeBackgroundColor = colors.base07;
-              lightSchemeTextColor = colors.base00;
-              scrollbarColor = colors.base03;
-              selectionColor = colors.base0D;
-              styleSystemControls = true;
-              lightColorScheme = "Default";
-              darkColorScheme = "Default";
-              immediateModify = false;
-            };
-            presets = [ ];
-            customThemes = [ ];
-            enabledByDefault = true;
-            enabledFor = [ ];
-            disabledFor = [ ];
-            changeBrowserTheme = false;
-            syncSettings = true;
-            syncSitesFixes = false;
-            automation = {
-              enabled = true;
-              mode = "system";
-              behavior = "OnOff";
-            };
-            time = {
-              activation = "18:00";
-              deactivation = "9:00";
-            };
-            location = {
-              latitude = null;
-              longitude = null;
-            };
-            previewNewDesign = false;
-            previewNewestDesign = false;
-            enableForPDF = true;
-            enableForProtectedPages = false;
-            enableContextMenus = false;
-            detectDarkTheme = true;
+      home-manager.users.schphe = {
+        xdg.mimeApps = {
+          enable = true;
+          defaultApplications = {
+            "text/html" = "helium.desktop";
+            "x-scheme-handler/http" = "helium.desktop";
+            "x-scheme-handler/https" = "helium.desktop";
+            "x-scheme-handler/about" = "helium.desktop";
+            "x-scheme-handler/unknown" = "helium.desktop";
           };
-
-          xdg.mimeApps = {
-            enable = true;
-            defaultApplications = {
-              "text/html" = "helium.desktop";
-              "x-scheme-handler/http" = "helium.desktop";
-              "x-scheme-handler/https" = "helium.desktop";
-              "x-scheme-handler/about" = "helium.desktop";
-              "x-scheme-handler/unknown" = "helium.desktop";
-            };
-          };
-
-          home.sessionVariables.BROWSER = "helium";
         };
+
+        home.sessionVariables.BROWSER = "helium";
+      };
     };
 }

@@ -17,6 +17,7 @@ let
     "direnv"
     "devenv"
     "compat"
+    "sandbox"
     "shell"
     "network"
     "game"

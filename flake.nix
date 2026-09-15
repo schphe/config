@@ -101,6 +101,7 @@
         ./feats/direnv
         ./feats/devenv
         ./feats/compat
+        ./feats/sandbox
         ./feats/shell
         ./feats/network
         ./feats/game
