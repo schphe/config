@@ -141,6 +141,19 @@
         };
 
         home.sessionVariables.BROWSER = "helium";
+
+        systemd.user.services.helium = {
+          Unit = {
+            Description = "Helium browser";
+            PartOf = [ "graphical-session.target" ];
+            After = [ "graphical-session.target" ];
+          };
+          Service = {
+            ExecStart = "${package}/bin/helium";
+            Restart = "no";
+          };
+          Install.WantedBy = [ "graphical-session.target" ];
+        };
       };
     };
 }

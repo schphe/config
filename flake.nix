@@ -110,6 +110,7 @@
         ./feats/agent
         ./feats/memory
         ./feats/battery
+        ./feats/librepods
         ./feats/stylix
         ./feats/share
         ./feats/anki

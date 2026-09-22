@@ -8,7 +8,11 @@
     in
     {
       fonts.fontconfig.localConf = ''
-        <dir>/run/secrets</dir>
+        <?xml version="1.0"?>
+        <!DOCTYPE fontconfig SYSTEM "urn:fontconfig:fonts.dtd">
+        <fontconfig>
+          <dir>/run/secrets</dir>
+        </fontconfig>
       '';
 
       stylix = {

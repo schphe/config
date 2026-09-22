@@ -59,10 +59,6 @@ hotkey-overlay {
 prefer-no-csd
 screenshot-path "~/pictures/screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
-spawn-at-startup "protonmail-bridge-gui"
-spawn-at-startup "thunderbird"
-spawn-at-startup "vesktop"
-
 binds {
     Mod+Return { spawn "ghostty"; }
     Mod+W { spawn "helium" "--new-window"; }

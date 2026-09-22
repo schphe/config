@@ -10,6 +10,15 @@
       font = config.stylix.fonts.sansSerif.name;
       profile = ".config/thunderbird/04okt13v.default";
 
+      waitForBridge = pkgs.writeShellScript "wait-for-bridge" ''
+        for _ in $(${pkgs.coreutils}/bin/seq 60); do
+          if (: </dev/tcp/127.0.0.1/1143) 2>/dev/null; then
+            exit 0
+          fi
+          ${pkgs.coreutils}/bin/sleep 1
+        done
+      '';
+
       protonmailBridgeGui = pkgs.protonmail-bridge-gui.overrideAttrs (old: {
         nativeBuildInputs = (old.nativeBuildInputs or [ ]) ++ [ pkgs.makeWrapper ];
         postFixup = (old.postFixup or "") + ''
@@ -26,6 +35,45 @@
 
       home-manager.users.schphe = {
         home.packages = [ protonmailBridgeGui ];
+
+        systemd.user.services = {
+          protonmail-bridge = {
+            Unit = {
+              Description = "Proton Mail Bridge";
+              PartOf = [ "graphical-session.target" ];
+              After = [
+                "graphical-session.target"
+                "noctalia.service"
+              ];
+              StartLimitIntervalSec = 60;
+              StartLimitBurst = 3;
+            };
+            Service = {
+              ExecStart = "${protonmailBridgeGui}/bin/protonmail-bridge-gui";
+              Restart = "on-failure";
+              RestartSec = 3;
+            };
+            Install.WantedBy = [ "graphical-session.target" ];
+          };
+
+          thunderbird = {
+            Unit = {
+              Description = "Thunderbird";
+              PartOf = [ "graphical-session.target" ];
+              After = [
+                "graphical-session.target"
+                "protonmail-bridge.service"
+              ];
+            };
+            Service = {
+              ExecStartPre = "${waitForBridge}";
+              ExecStart = "${config.programs.thunderbird.package}/bin/thunderbird";
+              Restart = "no";
+              TimeoutStartSec = 120;
+            };
+            Install.WantedBy = [ "graphical-session.target" ];
+          };
+        };
 
         home.file."${profile}/chrome/userChrome.css".text = ''
           :root {

@@ -1,11 +1,10 @@
 {
   flake.nixosModules.secret = { pkgs, ... }: {
     sops = {
-      age.keyFile = "/var/lib/sops-nix/key.txt";
-      secrets.berkeley-mono-font = {
+      age.keyFile = "/persist/var/lib/sops-nix/key.txt";
+      secrets."BerkeleyMonoVariable.ttf" = {
         sopsFile = ../../vault/system/BerkeleyMonoVariable.ttf.enc.yaml;
         format = "binary";
-        path = "/run/secrets/BerkeleyMonoVariable.ttf";
         owner = "schphe";
         group = "users";
         mode = "0444";
@@ -18,6 +17,8 @@
         mode = "0400";
       };
     };
+
+    users.users.schphe.extraGroups = [ "keys" ];
 
     environment.systemPackages = with pkgs; [
       age

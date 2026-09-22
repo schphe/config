@@ -8,6 +8,25 @@
     {
       home-manager.users.schphe.home.packages = [ pkgs.concord-tui ];
 
+      home-manager.users.schphe.systemd.user.services.vesktop = {
+        Unit = {
+          Description = "Vesktop";
+          PartOf = [ "graphical-session.target" ];
+          After = [
+            "graphical-session.target"
+            "noctalia.service"
+          ];
+          StartLimitIntervalSec = 60;
+          StartLimitBurst = 3;
+        };
+        Service = {
+          ExecStart = "${pkgs.vesktop}/bin/vesktop";
+          Restart = "on-failure";
+          RestartSec = 3;
+        };
+        Install.WantedBy = [ "graphical-session.target" ];
+      };
+
       home-manager.users.schphe.programs.vesktop = {
         enable = true;
         vencord = {

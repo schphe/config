@@ -2,7 +2,7 @@
 ui_scale = 0.90000000596046448
 
 [bar.default]
-end = ["tray", "notifications", "network", "battery"]
+end = ["airpods", "tray", "notifications", "network", "battery"]
 margin_ends = 0
 padding = 10
 radius = 0
@@ -83,8 +83,14 @@ background_opacity = 1.0
 [osd]
 background_opacity = 1.0
 
+[plugin_settings."ycf/mawaqit"]
+city = "Chicago"
+country = "USA"
+method = "13"
+school = "1"
+
 [plugins]
-enabled = ["cleboost/zed-provider", "8bury/mini-docker", "davemhammer/k8s-status", "cleboost/ssh-launcher"]
+enabled = ["cleboost/zed-provider", "8bury/mini-docker", "davemhammer/k8s-status", "cleboost/ssh-launcher", "noctalia/world_clock", "harveywuk/airpods"]
 
 [shell]
 corner_radius_scale = 1.0000000149011612
@@ -97,10 +103,14 @@ categories = false
 compact = true
 
 [shell.panel]
+control_center_position = "bottom_center"
 shadow = false
 
 [shell.shadow]
 alpha = 0.19999999552965164
+
+[widget.airpods]
+type = "harveywuk/airpods:airpods"
 
 [widget.battery]
 display_mode = "none"

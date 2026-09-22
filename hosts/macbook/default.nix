@@ -26,6 +26,7 @@ let
     "agent"
     "memory"
     "battery"
+    "librepods"
     "stylix"
     "share"
     "anki"
