@@ -2,6 +2,7 @@
   flake.nixosModules.mail =
     {
       config,
+      lib,
       pkgs,
       ...
     }:
@@ -29,6 +30,14 @@
       });
     in
     {
+      environment.persistence = lib.mkIf (config.fileSystems ? "/persist") {
+        "/persist".users.schphe.directories = [
+          ".config/protonmail"
+          ".config/thunderbird"
+          ".local/share/protonmail"
+        ];
+      };
+
       programs.thunderbird = {
         enable = true;
       };

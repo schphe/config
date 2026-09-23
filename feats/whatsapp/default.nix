@@ -99,6 +99,10 @@
       });
     in
     {
+      environment.persistence = lib.mkIf (config.fileSystems ? "/persist") {
+        "/persist".users.schphe.directories = [ ".local/share/oxidezap" ];
+      };
+
       home-manager.users.schphe = {
         home.packages = [
           oxidezap

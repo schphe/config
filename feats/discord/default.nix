@@ -1,11 +1,20 @@
 {
   flake.nixosModules.discord =
     {
+      config,
       lib,
       pkgs,
       ...
     }:
     {
+      environment.persistence = lib.mkIf (config.fileSystems ? "/persist") {
+        "/persist".users.schphe.directories = [
+          ".config/Vencord"
+          ".config/vesktop"
+          ".local/state/concord"
+        ];
+      };
+
       home-manager.users.schphe.home.packages = [ pkgs.concord-tui ];
 
       home-manager.users.schphe.systemd.user.services.vesktop = {

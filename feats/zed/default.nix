@@ -1,7 +1,19 @@
 {
   flake.nixosModules.zed =
-    { pkgs, ... }:
     {
+      config,
+      lib,
+      pkgs,
+      ...
+    }:
+    {
+      environment.persistence = lib.mkIf (config.fileSystems ? "/persist") {
+        "/persist".users.schphe.directories = [
+          ".config/zed"
+          ".local/share/zed"
+        ];
+      };
+
       home-manager.users.schphe.programs.zed-editor = {
         enable = true;
         extraPackages = [ pkgs.nixd ];

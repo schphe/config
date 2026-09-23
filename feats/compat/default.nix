@@ -2,7 +2,12 @@
 
 {
   flake.nixosModules.compat =
-    { pkgs, ... }:
+    {
+      config,
+      lib,
+      pkgs,
+      ...
+    }:
     let
       x86 = import inputs.nixpkgs {
         system = "x86_64-linux";
@@ -58,6 +63,10 @@
       '';
     in
     {
+      environment.persistence = lib.mkIf (config.fileSystems ? "/persist") {
+        "/persist".users.schphe.directories = [ ".wine" ];
+      };
+
       boot.binfmt.emulatedSystems = [ "x86_64-linux" ];
 
       programs.nix-ld.enable = true;

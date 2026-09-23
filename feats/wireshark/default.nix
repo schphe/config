@@ -1,10 +1,21 @@
 {
-  flake.nixosModules.wireshark = { pkgs, ... }: {
-    programs.wireshark = {
-      enable = true;
-      package = pkgs.wireshark;
-    };
+  flake.nixosModules.wireshark =
+    {
+      config,
+      lib,
+      pkgs,
+      ...
+    }:
+    {
+      environment.persistence = lib.mkIf (config.fileSystems ? "/persist") {
+        "/persist".users.schphe.directories = [ ".config/wireshark" ];
+      };
 
-    users.users.schphe.extraGroups = [ "wireshark" ];
-  };
+      programs.wireshark = {
+        enable = true;
+        package = pkgs.wireshark;
+      };
+
+      users.users.schphe.extraGroups = [ "wireshark" ];
+    };
 }

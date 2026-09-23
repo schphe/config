@@ -1,4 +1,10 @@
+{ config, lib, ... }:
+
 {
+  environment.persistence = lib.mkIf (config.fileSystems ? "/persist") {
+    "/persist".directories = [ "/var/lib/bluetooth" ];
+  };
+
   boot.loader = {
     systemd-boot.enable = true;
     systemd-boot.configurationLimit = 10;

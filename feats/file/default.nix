@@ -1,6 +1,11 @@
 {
   flake.nixosModules.file =
-    { pkgs, ... }:
+    {
+      config,
+      lib,
+      pkgs,
+      ...
+    }:
     let
       localeOverride =
         package: domain: translations:
@@ -38,6 +43,20 @@
       };
     in
     {
+      environment.persistence = lib.mkIf (config.fileSystems ? "/persist") {
+        "/persist".users.schphe = {
+          directories = [
+            ".config/Thunar"
+            ".config/xfce4"
+          ];
+          files = [
+            ".config/trashrc"
+            ".local/share/recently-used.xbel"
+            ".local/share/user-places.xbel"
+          ];
+        };
+      };
+
       programs.xfconf.enable = true;
 
       services.gvfs = {

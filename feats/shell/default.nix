@@ -1,7 +1,22 @@
 {
   flake.nixosModules.shell =
-    { pkgs, ... }:
     {
+      config,
+      lib,
+      pkgs,
+      ...
+    }:
+    {
+      environment.persistence = lib.mkIf (config.fileSystems ? "/persist") {
+        "/persist".users.schphe = {
+          directories = [ ".config/gh" ];
+          files = [
+            ".bash_history"
+            ".zsh_history"
+          ];
+        };
+      };
+
       environment.systemPackages = with pkgs; [
         curl
         git

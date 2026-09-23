@@ -2,7 +2,12 @@
 
 {
   flake.nixosModules.noctalia =
-    { pkgs, ... }:
+    {
+      config,
+      lib,
+      pkgs,
+      ...
+    }:
     let
       saveNoctalia = pkgs.writeShellApplication {
         name = "noctalia-save";
@@ -32,6 +37,14 @@
       };
     in
     {
+      environment.persistence = lib.mkIf (config.fileSystems ? "/persist") {
+        "/persist".users.schphe.directories = [
+          ".kube"
+          ".config/noctalia"
+          ".local/state/noctalia"
+        ];
+      };
+
       fonts.packages = with pkgs; [
         noto-fonts-color-emoji
       ];

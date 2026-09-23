@@ -10,6 +10,10 @@
       colors = config.lib.stylix.colors.withHashtag;
     in
     {
+      environment.persistence = lib.mkIf (config.fileSystems ? "/persist") {
+        "/persist".users.schphe.directories = [ ".local/share/fcitx5/mozc" ];
+      };
+
       home-manager.users.schphe.i18n.inputMethod = {
         enable = true;
         type = "fcitx5";

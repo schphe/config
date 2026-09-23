@@ -118,6 +118,10 @@
           });
     in
     {
+      environment.persistence = lib.mkIf (config.fileSystems ? "/persist") {
+        "/persist".users.schphe.directories = [ ".config/net.imput.helium" ];
+      };
+
       environment.systemPackages = [ package ];
 
       stylix.targets.chromium.enable = false;
