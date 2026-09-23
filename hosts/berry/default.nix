@@ -10,7 +10,7 @@ let
     "upkeep"
     "mdns"
     "tailscale"
-    "dokploy"
+    "docker"
   ];
   features = featureNames |> map (name: modules.${name});
 in
@@ -75,7 +75,14 @@ in
           users.users.root.hashedPassword = "!";
 
           networking.networkmanager.enable = true;
-          networking.firewall.enable = true;
+          networking.firewall = {
+            enable = true;
+            allowedTCPPorts = [
+              80
+              443
+            ];
+            allowedUDPPorts = [ 443 ];
+          };
 
           services.openssh = {
             enable = true;

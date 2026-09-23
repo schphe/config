@@ -128,7 +128,7 @@
         ./feats/upkeep
         ./feats/plasma
         ./feats/tailscale
-        ./feats/dokploy
+        ./feats/docker
         ./feats/mdns
       ];
 
