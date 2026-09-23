@@ -1,11 +1,6 @@
 {
   flake.nixosModules.mail =
-    {
-      config,
-      lib,
-      pkgs,
-      ...
-    }:
+    { config, pkgs, ... }:
     let
       colors = config.lib.stylix.colors.withHashtag;
       font = config.stylix.fonts.sansSerif.name;
@@ -30,7 +25,7 @@
       });
     in
     {
-      environment.persistence = lib.mkIf (config.fileSystems ? "/persist") {
+      environment.persistence = pkgs.lib.mkIf (config.fileSystems ? "/persist") {
         "/persist".users.schphe.directories = [
           ".config/protonmail"
           ".config/thunderbird"

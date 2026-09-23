@@ -29,6 +29,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    hardware.url = "github:NixOS/nixos-hardware";
+
     home = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -87,6 +89,7 @@
       imports = [
         ./hosts/macbook
         ./hosts/phone
+        ./hosts/berry
         ./feats/disk
         ./feats/persist
         ./feats/secret
@@ -124,6 +127,9 @@
         ./feats/vpn
         ./feats/upkeep
         ./feats/plasma
+        ./feats/tailscale
+        ./feats/dokploy
+        ./feats/mdns
       ];
 
       systems = [ "aarch64-linux" ];

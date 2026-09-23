@@ -7,8 +7,6 @@
       ...
     }:
     {
-      # every feat declares the paths it owns behind this same guard, so a host
-      # without a /persist filesystem inherits none of them
       config = lib.mkIf (config.fileSystems ? "/persist") {
         environment.persistence."/persist" = {
           hideMounts = true;

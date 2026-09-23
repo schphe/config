@@ -20,6 +20,8 @@ let
     "sandbox"
     "shell"
     "network"
+    "mdns"
+    "tailscale"
     "game"
     "wireshark"
     "reverse"

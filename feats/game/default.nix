@@ -1,11 +1,6 @@
 {
   flake.nixosModules.game =
-    {
-      config,
-      lib,
-      pkgs,
-      ...
-    }:
+    { config, pkgs, ... }:
     let
       mcpelauncher = pkgs.mcpelauncher-ui-qt.override {
         mcpelauncher-client = pkgs.mcpelauncher-client.overrideAttrs (old: {
@@ -14,7 +9,7 @@
       };
     in
     {
-      environment.persistence = lib.mkIf (config.fileSystems ? "/persist") {
+      environment.persistence = pkgs.lib.mkIf (config.fileSystems ? "/persist") {
         "/persist".users.schphe.directories = [
           ".config/mcpelauncher-ui-qt"
           ".local/share/mcpelauncher"

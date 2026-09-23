@@ -2,12 +2,7 @@
 
 {
   flake.nixosModules.compat =
-    {
-      config,
-      lib,
-      pkgs,
-      ...
-    }:
+    { config, pkgs, ... }:
     let
       x86 = import inputs.nixpkgs {
         system = "x86_64-linux";
@@ -63,7 +58,7 @@
       '';
     in
     {
-      environment.persistence = lib.mkIf (config.fileSystems ? "/persist") {
+      environment.persistence = pkgs.lib.mkIf (config.fileSystems ? "/persist") {
         "/persist".users.schphe.directories = [ ".wine" ];
       };
 

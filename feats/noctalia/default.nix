@@ -2,12 +2,7 @@
 
 {
   flake.nixosModules.noctalia =
-    {
-      config,
-      lib,
-      pkgs,
-      ...
-    }:
+    { config, pkgs, ... }:
     let
       saveNoctalia = pkgs.writeShellApplication {
         name = "noctalia-save";
@@ -37,7 +32,7 @@
       };
     in
     {
-      environment.persistence = lib.mkIf (config.fileSystems ? "/persist") {
+      environment.persistence = pkgs.lib.mkIf (config.fileSystems ? "/persist") {
         "/persist".users.schphe.directories = [
           ".kube"
           ".config/noctalia"

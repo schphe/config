@@ -19,6 +19,7 @@
 
       environment.systemPackages = with pkgs; [
         curl
+        ghostty.terminfo
         git
         jq
         pciutils
