@@ -33,7 +33,7 @@ in
     ++ features
     ++ [
       (
-        { pkgs, ... }:
+        { lib, pkgs, ... }:
         {
           networking.hostName = "berry";
           time.timeZone = "America/Chicago";
@@ -59,6 +59,17 @@ in
           };
           nix.registry.nixpkgs.flake = inputs.nixpkgs;
           nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
+
+          systemd.settings.Manager = {
+            RuntimeWatchdogSec = "30s";
+            RebootWatchdogSec = "2min";
+          };
+
+          services.journald.settings.Journal.SystemMaxUse = "256M";
+
+          boot.blacklistedKernelModules = [ "vc4" ];
+
+          sdImage.firmwareSize = 128;
 
           users.users.schphe = {
             isNormalUser = true;
